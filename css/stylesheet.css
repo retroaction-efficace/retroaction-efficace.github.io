@@ -30,7 +30,7 @@ nav a:hover {
 }
 
 header, footer {
-    width: 100%;
+    calc(100% - 250px);
     height: 50px;
     background-color: transparent;
     color: #333;
@@ -38,11 +38,11 @@ header, footer {
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: 1;
+    position: relative;
 }
 
 header {
-    margin-top: 100vh;
+    top: 0;
 }
 
 footer {
