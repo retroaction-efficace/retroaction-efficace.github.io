@@ -37,13 +37,13 @@ main {
 section {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
 }
 
 article {
     flex: 1 1 calc(33.333% - 20px);
     background-color: #e4e4e4;
     padding: 20px;
+    margin: 10px;
     box-sizing: border-box;
 }
 
