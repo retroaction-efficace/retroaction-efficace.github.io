@@ -37,6 +37,23 @@ main {
     padding: 20px;
 }
 
+aside.left {
+    display: flex;
+    align-items: center;
+}
+aside.left img {
+    margin-right: 10px;
+}
+
+aside.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+aside.right img {
+    margin-left: 10px;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
