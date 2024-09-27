@@ -53,7 +53,9 @@ footer {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-sizing: border-box;
 }
