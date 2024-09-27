@@ -12,6 +12,7 @@ main {
 nav {
     width: 250px;
     height: 100vh;
+    padding: 0 20px 20px 20px;
     background-color: #333;
     color: #fff;
     position: fixed;
@@ -37,12 +38,11 @@ header, footer {
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    position: fixed;
     z-index: 1;
 }
 
 header {
-    top: 0;
+    margin-top: 100vh;
 }
 
 footer {
