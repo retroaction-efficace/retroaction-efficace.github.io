@@ -1,17 +1,9 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const components = [
-    { selector: 'nav', url: 'components/nav.html' },
-    { selector: 'header', url: 'components/header.html' },
-    { selector: 'footer', url: 'components/footer.html' }
-  ];
-
-  await Promise.all(components.map(async ({ selector, url }) => {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`Failed to load ${url}`);
-      document.querySelector(selector).innerHTML = await response.text();
-    } catch (error) {
-      console.error(`Error loading ${selector}:`, error);
-    }
-  }));
-});
+fetch('components/nav.html')
+  .then(response => response.text())
+  .then(data => document.querySelector('nav').innerHTML = data);
+fetch('components/header.html')
+  .then(response => response.text())
+  .then(data => document.querySelector('header').innerHTML = data);
+fetch('components/footer.html')
+  .then(response => response.text())
+  .then(data => document.querySelector('footer').innerHTML = data);
