@@ -5,6 +5,16 @@ body {
     background-color: #f4f4f4;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e4e4e4;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -20,14 +30,7 @@ nav {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
     margin: 0 15px;
-}
-
-nav a:hover {
-    color: #e4e4e4;
 }
 
 main {
@@ -59,14 +62,4 @@ footer {
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #e4e4e4;
 }
