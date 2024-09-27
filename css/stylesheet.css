@@ -41,18 +41,14 @@ aside.left {
     display: flex;
     align-items: center;
 }
-aside.left img {
-    width: 150px;
-    height: 150px;
-    margin-right: 10px;
-}
 
 aside.right {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
 }
-aside.right img {
+
+aside.left img, aside.right img {
     width: 150px;
     height: 150px;
     margin-left: 10px;
