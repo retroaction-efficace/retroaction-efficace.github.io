@@ -6,6 +6,8 @@
 </head>
 <body>
   <header></header>
+  <nav></nav>
+  <button class="toggle-btn" onclick="toggleNav()">☰</button>
   <main>
     <h3>À propos de la formation</h3>
     <p>Les enseignants, les parents et les professionnels qui interviennent auprès d’enfants ou d’adolescents rencontrent fréquemment des situations où ils doivent réagir face à une erreur de l’apprenant par une rétroaction. Cette situation devient d’autant plus fréquente lors de l’intervention auprès d’élèves présentant des difficultés d’apprentissage.</p>
@@ -17,4 +19,10 @@
   <footer></footer>
   <script src="js/fetch.js"></script>
 </body>
+<script>
+  function toggleNav() {
+    let sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('folded');
+  }
+</script>
 </html>
