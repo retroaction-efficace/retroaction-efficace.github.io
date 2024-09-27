@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 header, footer {
-    width: calc(100% - 250px);
+    width: 100%;
     height: 50px;
     background-color: transparent;
     color: #333;
@@ -43,10 +43,8 @@ header, footer {
 
 header {
     top: 0;
-    left: 250px;
 }
 
 footer {
     bottom: 0;
-    left: 250px;
 }
