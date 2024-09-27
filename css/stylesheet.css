@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    text-decoration: none;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -22,6 +21,7 @@ nav {
 
 nav a {
     color: white;
+    text-decoration: none;
     margin: 0 15px;
 }
 
@@ -58,4 +58,9 @@ footer {
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
