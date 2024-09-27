@@ -37,18 +37,12 @@ main {
     padding: 20px;
 }
 
-aside.left {
+aside {
     display: flex;
     align-items: center;
 }
 
-aside.right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; 
-}
-
-aside.left img, aside.right img {
+aside img {
     width: 150px;
     height: 150px;
     margin-left: 10px;
