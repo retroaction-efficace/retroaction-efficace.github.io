@@ -38,19 +38,19 @@ nav a {
 }
 
 main {
-    padding: 20px;
+    padding: 40px;
 }
 
 aside {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 aside img {
     width: 150px;
     height: 150px;
-    margin: 20px;
+    margin: 10px;
 }
 
 section {
