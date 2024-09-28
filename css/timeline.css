@@ -9,11 +9,12 @@
   content: '';
   position: absolute;
   top: 20px; /* Adjusted position */
-  left: 10px; /* Start from the middle of the first dot */
-  right: 10px; /* End at the middle of the last dot */
+  left: 50%; /* Start from the middle of the first dot */
+  width: calc(100% - 20px); /* Adjusted width */
   height: 2px;
   background: #333; /* Dark grey color */
   z-index: 1;
+  transform: translateX(-50%);
 }
 
 .timeline li {
@@ -36,6 +37,10 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+
+.timeline li:last-child::before {
+  left: 50%;
 }
 
 .timeline li:last-child {
