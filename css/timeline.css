@@ -38,3 +38,8 @@
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+
+.timeline p {
+  text-align: justify;
+  line-height: 1.6;
+}
