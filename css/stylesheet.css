@@ -120,6 +120,6 @@ footer {
     box-sizing: border-box;
 }
 
-header a, footer a {
+header a, nav a, footer a {
     color: white;
 }
