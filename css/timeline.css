@@ -1,6 +1,6 @@
 .timeline {
   display: flex;
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
   position: relative;
