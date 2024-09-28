@@ -26,10 +26,6 @@
   z-index: 2;
 }
 
-.timeline li:hover {
-  transform: scale(1.1);
-}
-
 .timeline li::before {
   content: '';
   position: absolute;
