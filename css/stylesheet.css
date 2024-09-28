@@ -55,12 +55,12 @@ aside img {
     margin: 10px 40px;
 }
 
-section {
+.box {
     display: flex;
     flex-wrap: wrap;
 }
 
-article {
+.box li {
     flex: 1 1 calc(10%);
     background-color: #e4e4e4;
     padding: 20px;
