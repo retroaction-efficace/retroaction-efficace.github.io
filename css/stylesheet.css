@@ -5,6 +5,10 @@ body {
     background-color: #fbfaf5;
 }
 
+p {
+    text-align: justify;
+}
+
 a {
     color: white;
     text-decoration: none;
