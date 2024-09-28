@@ -31,10 +31,7 @@
 	position: absolute;
 	left: 50%;
 	top: -40px;
-}
-
-.timeline li:not(:first-child):before {
-    transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .timeline li:after {
