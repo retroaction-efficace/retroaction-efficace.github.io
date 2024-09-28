@@ -50,7 +50,7 @@ aside {
 aside img {
     width: 150px;
     height: 150px;
-    margin: 10px;
+    margin: 40px;
 }
 
 section {
@@ -59,7 +59,7 @@ section {
 }
 
 article {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 40px);
     background-color: #e4e4e4;
     padding: 20px;
     margin: 10px;
