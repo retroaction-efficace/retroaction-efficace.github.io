@@ -69,10 +69,6 @@ aside img {
     box-sizing: border-box;
 }
 
-.box li a:hover{
-    color: black;
-}
-
 .line {
   display: flex;
   justify-content: space-between;
