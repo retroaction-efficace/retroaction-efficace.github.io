@@ -8,7 +8,7 @@
 .timeline::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 20px; /* Adjusted position */
   left: 0;
   width: 100%;
   height: 2px;
@@ -30,7 +30,7 @@
 .timeline li::before {
   content: '';
   position: absolute;
-  top: 10px; /* Adjusted position */
+  top: 20px; /* Adjusted position */
   left: 50%;
   width: 20px; /* Increased size */
   height: 20px; /* Increased size */
