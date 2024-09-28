@@ -38,13 +38,13 @@ nav a {
 }
 
 main {
-    padding: 10px 40px;
+    padding: 15px 40px;
 }
 
 aside {
     display: flex;
     align-items: center;
-    padding: 10px 40px;
+    padding: 15px 40px;
 }
 
 aside img {
@@ -62,7 +62,7 @@ article {
     flex: 1 1 calc(25%);
     background-color: #e4e4e4;
     padding: 20px;
-    margin: 10px 40px;
+    margin: 15px 40px;
     box-sizing: border-box;
 }
 
