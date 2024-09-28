@@ -60,13 +60,15 @@ aside img {
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-around;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .box li {
     flex: 1 1 200px;
     background-color: #e4e4e4;
     padding: 20px;
-    margin: 15px;
+    margin: 15px 0;
     box-sizing: border-box;
 }
 
