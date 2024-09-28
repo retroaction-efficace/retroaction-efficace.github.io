@@ -58,6 +58,7 @@ aside img {
 .box {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .box li {
