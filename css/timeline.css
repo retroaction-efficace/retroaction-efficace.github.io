@@ -1,5 +1,6 @@
 .timeline {
   display: flex;
+  justify-content: space-between; /* Distribute items evenly */
   list-style-type: none;
   padding: 0;
   position: relative;
@@ -11,8 +12,8 @@
   content: '';
   position: absolute;
   top: 20px; 
-  left: 0; /* Changed from 10px to 0 */
-  width: 100%; /* Changed from calc(100% - 20px) to 100% */
+  left: 0;
+  width: 100%;
   height: 2px;
   background: #333;
   z-index: 1;
@@ -20,10 +21,8 @@
 
 .timeline li {
   position: relative;
-  flex: 1;
   padding: 40px 10px 10px;
   text-align: center;
-  margin-right: 10px;
   z-index: 2;
 }
 
@@ -38,9 +37,4 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-}
-
-.timeline li:last-child {
-  margin-right: 0; /* Ensure the last item has no right margin */
-  flex: 0 0 auto; /* Prevent the last item from stretching */
 }
