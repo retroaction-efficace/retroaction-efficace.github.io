@@ -38,13 +38,13 @@ nav a {
 }
 
 main {
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 aside {
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 aside img {
