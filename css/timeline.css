@@ -26,6 +26,10 @@
   z-index: 2;
 }
 
+.timeline li:hover {
+  transform: scale(1.1);
+}
+
 .timeline li::before {
   content: '';
   position: absolute;
@@ -42,4 +46,5 @@
 .timeline p {
   text-align: justify;
   line-height: 1.6;
+  max-width: 600px;
 }
