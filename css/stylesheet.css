@@ -57,7 +57,7 @@ aside img {
 
 .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
     position: relative;
