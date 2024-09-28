@@ -12,7 +12,6 @@ p {
 }
 
 a {
-    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -118,4 +117,8 @@ footer {
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
+}
+
+header a, footer a {
+    color: white;
 }
