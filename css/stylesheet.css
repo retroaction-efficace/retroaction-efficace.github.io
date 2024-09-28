@@ -63,10 +63,10 @@ aside img {
 }
 
 .box li {
-    flex: 1 1 calc(10%);
+    flex: 1 1 200px;
     background-color: #e4e4e4;
     padding: 20px;
-    margin: 15px 40px;
+    margin: 15px;
     box-sizing: border-box;
 }
 
