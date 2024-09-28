@@ -57,10 +57,12 @@ aside img {
 
 .box {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     list-style-type: none;
-    justify-content: space-around;
+    padding: 0;
+    position: relative;
     width: 100%;
+    margin: 0 auto;
 }
 
 .box li {
