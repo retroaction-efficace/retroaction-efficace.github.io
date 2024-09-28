@@ -54,12 +54,13 @@ aside img {
 }
 
 section {
+    padding: 40px
     display: flex;
     flex-wrap: wrap;
 }
 
 article {
-    flex: 1 1 calc(33.333% - 40px);
+    flex: 1 1 calc(33.333% - 100px);
     background-color: #e4e4e4;
     padding: 20px;
     margin: 10px;
