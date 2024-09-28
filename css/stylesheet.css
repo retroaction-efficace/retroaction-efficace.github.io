@@ -59,8 +59,6 @@ aside img {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: center;
-    width: 100%
 }
 
 .box li {
