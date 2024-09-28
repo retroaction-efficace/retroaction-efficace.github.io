@@ -26,17 +26,6 @@
   transform: translate(-50%, -50%);
 }
 
-.timeline li::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  width: 2px;
-  height: calc(100% - 20px);
-  background: #007bff;
-  transform: translateX(-50%);
-}
-
 .timeline li:last-child {
   margin-right: 0;
 }
