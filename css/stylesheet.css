@@ -38,7 +38,7 @@ nav a {
 }
 
 main {
-    padding: 20px 40px;
+    padding: 10px 40px;
 }
 
 aside {
@@ -50,7 +50,7 @@ aside {
 aside img {
     width: 150px;
     height: 150px;
-    margin: 40px;
+    margin: 10px 40px;
 }
 
 section {
