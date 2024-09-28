@@ -54,7 +54,6 @@ aside img {
 }
 
 section {
-    padding: 40px
     display: flex;
     flex-wrap: wrap;
 }
