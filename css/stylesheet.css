@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #fbfaf5;
+    background-color: #f0f0f0; /* Lighter background for better contrast */
 }
 
 p {
@@ -12,29 +12,31 @@ p {
 }
 
 a {
-    color: black;
+    color: #007acc; /* Blue color for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #e4e4e4;
+    color: #005f99; /* Darker blue on hover */
 }
 
 header {
-    background-color: #3e6990;
+    background-color: #2c3e50; /* Darker shade for header */
+    color: #ffffff; /* White text for better readability */
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: e9e3b4;
+    background-color: #ecf0f1; /* Light grey for navigation */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
     margin: 0 15px;
+    color: #2c3e50; /* Matching the header color */
 }
 
 main {
@@ -65,7 +67,8 @@ aside img {
 
 .box li {
     flex: 1 1 200px;
-    background-color: aabd8c;
+    background-color: #8e44ad; /* Purple for a vibrant look */
+    color: #ffffff; /* White text for contrast */
     padding: 20px;
     margin: 15px;
     box-sizing: border-box;
@@ -88,7 +91,7 @@ aside img {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #f39b6d;
+  background: #3498db; /* Blue line for a clean look */
 }
 
 .line li {
@@ -104,13 +107,14 @@ aside img {
   left: 50%;
   width: 20px;
   height: 20px;
-  background: #f39b6d;
+  background: #3498db; /* Matching the line color */
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 
 footer {
-    background-color: #3e6990;
+    background-color: #2c3e50; /* Matching the header color */
+    color: #ffffff; /* White text for readability */
     padding: 10px;
     display: flex;
     justify-content: space-between;
