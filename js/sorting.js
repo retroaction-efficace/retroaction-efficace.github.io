@@ -34,12 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextParagraph.classList.remove('hidden');
                 nextParagraph.classList.add('visible');
             } else {
-                verifyButton.classList.remove('hidden');
-                verifyButton.classList.add('visible');
                 draggableContainer.style.background = 'none';
                 draggableContainer.style.outline = 'none';
                 draggableContainer.style.display = 'none'; // Hide the container
             }
+        }
+    }
+
+    // Function to check if all paragraphs are placed
+    function checkAllPlaced() {
+        const allPlaced = Array.from(paragraphs).every(p => p.classList.contains('dropped'));
+        if (allPlaced) {
+            verifyButton.classList.remove('hidden');
+            verifyButton.classList.add('visible');
+        } else {
+            verifyButton.classList.remove('visible');
+            verifyButton.classList.add('hidden');
         }
     }
 
@@ -69,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 draggableElement.classList.remove('visible');
                 draggableElement.classList.add('dropped');
                 updateVisibility();
+                checkAllPlaced(); // Check if all paragraphs are placed
             }
         });
     });
@@ -108,8 +119,8 @@ document.addEventListener('DOMContentLoaded', function() {
         draggableContainer.style.display = ''; // Show the container
         draggableContainer.style.background = ''; // Reset background
         draggableContainer.style.outline = ''; // Reset outline
-        verifyButton.classList.remove('hidden');
-        verifyButton.classList.add('visible');
+        verifyButton.classList.remove('visible');
+        verifyButton.classList.add('hidden');
         retryButton.classList.remove('visible');
         retryButton.classList.add('hidden');
         updateVisibility();
