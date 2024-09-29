@@ -1,5 +1,5 @@
 table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
     table-layout: fixed;
@@ -19,12 +19,33 @@ th {
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #f9f9f9;
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 10px;
+    min-height: 200px;
+}
+
+.draggable p {
+    margin: 10px 0;
+    cursor: grab;
+    transition: background-color 0.3s;
+}
+
+.draggable p:hover {
+    background-color: #e0e0e0;
 }
 
 .dropzone {
     min-height: 50px;
     border: 1px dashed #ccc;
+}
+
+#verify {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#verify:hover {
+    background-color: #45a049;
 }
