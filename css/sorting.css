@@ -1,5 +1,6 @@
 table {
     width: 100%;
+    margin: 20px;
     border-collapse: collapse;
     margin-bottom: 20px;
     table-layout: fixed;
@@ -17,8 +18,10 @@ th {
 
 .draggable {
     border: 1px solid #ddd;
+    margin: 20px;
     padding: 10px;
     background-color: #f9f9f9;
+    display: inline-block;
 }
 
 .draggable p {
