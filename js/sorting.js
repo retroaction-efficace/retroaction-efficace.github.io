@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropzones = document.querySelectorAll('.dropzone');
     const draggableContainer = document.getElementById('draggable');
     const verifyButton = document.getElementById('verify');
+    let currentIndex = 0;
 
     paragraphs.forEach(p => {
         p.addEventListener('dragstart', dragStart);
@@ -27,10 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const draggableElement = document.getElementById(id);
         e.target.appendChild(draggableElement);
 
-        setTimeout(() => {
-            if (draggableContainer.querySelectorAll('p').length === 0) {
-                verifyButton.style.display = 'block';
-            }
-        }, 100);
+        currentIndex++;
+        if (currentIndex < paragraphs.length) {
+            paragraphs[currentIndex].style.display = 'block';
+        } else {
+            verifyButton.style.display = 'block';
+        }
     }
 });
