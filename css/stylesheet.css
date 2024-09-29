@@ -71,11 +71,11 @@ aside img {
 
 .box li {
     flex: 1 1 200px;
-    background-color: #d3d3d3;
+    background-color: #e0e0e0; /* Lighter grey */
     color: #333333;
     padding: 20px;
     margin: 15px;
-    box-sizing: border-box;
+    box-sizing: border-box.
 }
 
 .line {
@@ -96,7 +96,7 @@ aside img {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #333333;
+  background: #333333; /* Dark grey */
 }
 
 .line li {
@@ -112,9 +112,9 @@ aside img {
   left: 50%;
   width: 20px;
   height: 20px;
-  background: #ffffff;
+  background: #333333; /* Dark grey */
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%).
 }
 
 footer {
@@ -127,5 +127,5 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    box-sizing: border-box;
+    box-sizing: border-box.
 }
