@@ -46,6 +46,7 @@
 .correct {
     color: green;
     margin: 0 auto 20px;
+    cursor: text;
 }
 
 table {
