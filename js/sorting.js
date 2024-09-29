@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const paragraphs = document.querySelectorAll('.draggable p');
     const dropzones = document.querySelectorAll('.dropzone');
     const verifyButton = document.getElementById('verify');
+    const draggableContainer = document.getElementById('draggable');
     let currentIndex = 0;
 
     paragraphs.forEach(p => p.addEventListener('dragstart', dragStart));
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             paragraphs[++currentIndex].classList.replace('hidden', 'visible');
         } else {
             dropzones.forEach(zone => zone.classList.add('hidden'));
+            draggableContainer.replaceWith(verifyButton);
             verifyButton.classList.replace('hidden', 'visible');
         }
     }
