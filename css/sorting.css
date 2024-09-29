@@ -30,11 +30,8 @@
 
 .verify, .retry {
     margin: 20px auto;
-    padding: 25px;
-    background-color: #f9f9f9;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 .verify:hover, .retry:hover {
