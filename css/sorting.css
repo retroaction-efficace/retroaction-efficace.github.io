@@ -13,8 +13,9 @@
     transition: background-color 0.3s;
 }
 
-.draggable:hover, .draggable button:hover {
+.draggable:hover {
     background-color: #e0e0e0;
+    cursor: grab;
 }
 
 .dropzone {
@@ -45,6 +46,7 @@
 
 .verify:hover, .retry:hover {
     background-color: #45a049;
+    cursor: click;
 }
 
 table {
