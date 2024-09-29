@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #e0f7fa; /* Light cyan background */
 }
 
 p {
@@ -13,17 +13,17 @@ p {
 }
 
 a {
-    color: #007acc; /* Bright blue links */
+    color: #ff4081; /* Bright pink links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #005f99; /* Darker blue on hover */
+    color: #c2185b; /* Darker pink on hover */
 }
 
 header {
-    background-color: #ff6347; /* Tomato red */
+    background-color: #3f51b5; /* Indigo */
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -31,7 +31,7 @@ header {
 }
 
 nav {
-    background-color: #f8f8f8; /* Light grey */
+    background-color: #ffffff; /* White */
     padding: 15px;
     text-align: center;
     border-bottom: 2px solid #e0e0e0;
@@ -39,7 +39,7 @@ nav {
 
 nav a {
     margin: 0 20px;
-    color: #ff6347; /* Matching the header color */
+    color: #3f51b5; /* Matching the header color */
     font-weight: bold;
 }
 
@@ -48,14 +48,15 @@ main {
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    border-radius: 10px;
 }
 
 aside {
     display: flex;
     align-items: center;
     padding: 20px 50px;
-    background-color: #f0f8ff; /* Matching the body background */
-    border-left: 5px solid #007acc;
+    background-color: #e0f7fa; /* Matching the body background */
+    border-left: 5px solid #ff4081;
 }
 
 aside img {
@@ -78,7 +79,7 @@ aside img {
 
 .box li {
     flex: 1 1 200px;
-    background-color: #e6e6fa; /* Lavender */
+    background-color: #ffe0b2; /* Light orange */
     color: #333333;
     padding: 20px;
     margin: 15px;
@@ -126,7 +127,7 @@ aside img {
 }
 
 footer {
-    background-color: #ff6347;
+    background-color: #3f51b5;
     color: #ffffff;
     padding: 15px;
     display: flex;
