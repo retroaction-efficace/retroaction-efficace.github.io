@@ -1,5 +1,5 @@
 .draggable {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
     display: inline-block;
     width: fit-content;
 }
@@ -9,11 +9,11 @@
     padding: 25px;
     background-color: #f9f9f9;
     transition: background-color 0.3s;
+    cursor: grab;
 }
 
 .draggable p:hover {
     background-color: #e0e0e0;
-    cursor: grab;
 }
 
 .dropzone {
@@ -25,13 +25,8 @@
     display: none;
 }
 
-.visible {
+.visible, .dropped {
     display: block;
-}
-
-.dropped {
-    display: block;
-    cursor: grab;
 }
 
 .verify, .retry {
@@ -45,7 +40,6 @@
 
 .verify:hover, .retry:hover {
     background-color: #45a049;
-    cursor: pointer;
 }
 
 table {
