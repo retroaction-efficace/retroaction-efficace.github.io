@@ -33,8 +33,7 @@ th {
 
 .dropzone {
     border: 1px dashed #ccc;
-    display: flex;
-    justify-content: center;
+    height:300px;
 }
 
 #verify {
