@@ -30,15 +30,14 @@
 
 .verify, .retry {
     margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     cursor: pointer;
 }
 
 .verify:hover, .retry:hover {
-    background-color: #45a049;
+    background-color: #e0e0e0;
 }
 
 .correct {
