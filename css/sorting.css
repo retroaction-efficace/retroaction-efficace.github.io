@@ -16,7 +16,9 @@ th {
 }
 
 .draggable {
+    border: 1px solid #ddd;
     padding: 10px;
+    background-color: #f9f9f9;
 }
 
 .draggable p {
@@ -25,7 +27,7 @@ th {
     transition: background-color 0.3s;
 }
 
-.draggable p:hover {
+.draggable:hover {
     background-color: #e0e0e0;
 }
 
