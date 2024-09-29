@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Initial visibility update
     updateVisibility();
 
     // Drag and drop functionality
