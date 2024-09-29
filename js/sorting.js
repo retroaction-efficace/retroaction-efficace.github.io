@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         verifyButton.classList.replace('visible', 'hidden');
         if (allCorrect) {
             excellentMessage.classList.replace('hidden', 'visible');
+            paragraphs.forEach(p => p.removeAttribute('draggable'));
         } else {
             retryButton.classList.replace('hidden', 'visible');
         }
@@ -103,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.classList.add('visible');
             p.style.color = ''; 
             draggableContainer.appendChild(p);
+            attachDragStartEvent(p);
         });
         dropzones.forEach(zone => {
             while (zone.firstChild) {
