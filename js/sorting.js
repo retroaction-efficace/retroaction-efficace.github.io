@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const children = zone.children;
             Array.from(children).forEach(child => {
                 if (correctPlacements[child.id] === index) {
-                    child.style.backgroundColor = 'green';
+                    child.style.color = 'green';
                 } else {
-                    child.style.backgroundColor = 'red';
+                    child.style.color = 'red';
                 }
             });
         });
