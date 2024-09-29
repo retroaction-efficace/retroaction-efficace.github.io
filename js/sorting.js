@@ -56,9 +56,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial visibility update
     updateVisibility();
 
+    // Add draggable attribute on hover
+    draggableContainer.addEventListener('mouseenter', function() {
+        paragraphs.forEach(p => {
+            p.setAttribute('draggable', true);
+        });
+    });
+
+    // Remove draggable attribute when not hovering
+    draggableContainer.addEventListener('mouseleave', function() {
+        paragraphs.forEach(p => {
+            p.removeAttribute('draggable');
+        });
+    });
+
     // Drag and drop functionality
     paragraphs.forEach(p => {
-        p.setAttribute('draggable', true);
         p.addEventListener('dragstart', function(event) {
             event.dataTransfer.setData('text/plain', event.target.id);
         });
@@ -119,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         draggableContainer.style.display = ''; // Show the container
         draggableContainer.style.background = ''; // Reset background
         draggableContainer.style.outline = ''; // Reset outline
-        verifyButton.classList.remove('visible');
+        verifyButton.classList.remove('hidden');
         verifyButton.classList.add('hidden');
         retryButton.classList.remove('visible');
         retryButton.classList.add('hidden');
