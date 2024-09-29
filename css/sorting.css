@@ -32,10 +32,8 @@ th {
 }
 
 .dropzone {
-    height: 600px;
     border: 1px dashed #ccc;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
 }
 
