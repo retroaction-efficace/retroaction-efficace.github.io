@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < paragraphs.length - 1) {
             paragraphs[++currentIndex].classList.replace('hidden', 'visible');
         } else {
+            dropzones.forEach(zone => zone.classList.add('hidden'));
             verifyButton.classList.replace('hidden', 'visible');
         }
     }
