@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #f0f0f0; /* Lighter background for better contrast */
+    background-color: #f5f5f5; /* Light grey background */
 }
 
 p {
@@ -12,31 +12,31 @@ p {
 }
 
 a {
-    color: #007acc; /* Blue color for links */
+    color: #333333; /* Dark grey for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #005f99; /* Darker blue on hover */
+    color: #666666; /* Slightly lighter grey on hover */
 }
 
 header {
-    background-color: #2c3e50; /* Darker shade for header */
-    color: #ffffff; /* White text for better readability */
+    background-color: #4a4a4a; /* Dark grey for header */
+    color: #ffffff; /* White text for contrast */
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #ecf0f1; /* Light grey for navigation */
+    background-color: #e0e0e0; /* Light grey for navigation */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
     margin: 0 15px;
-    color: #2c3e50; /* Matching the header color */
+    color: #4a4a4a; /* Matching the header color */
 }
 
 main {
@@ -67,8 +67,8 @@ aside img {
 
 .box li {
     flex: 1 1 200px;
-    background-color: #8e44ad; /* Purple for a vibrant look */
-    color: #ffffff; /* White text for contrast */
+    background-color: #d3d3d3; /* Light grey for boxes */
+    color: #333333; /* Dark grey text */
     padding: 20px;
     margin: 15px;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ aside img {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #3498db; /* Blue line for a clean look */
+  background: #b0b0b0; /* Medium grey line */
 }
 
 .line li {
@@ -107,13 +107,13 @@ aside img {
   left: 50%;
   width: 20px;
   height: 20px;
-  background: #3498db; /* Matching the line color */
+  background: #b0b0b0; /* Matching the line color */
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 
 footer {
-    background-color: #2c3e50; /* Matching the header color */
+    background-color: #4a4a4a; /* Matching the header color */
     color: #ffffff; /* White text for readability */
     padding: 10px;
     display: flex;
