@@ -1,25 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const paragraphs = document.querySelectorAll('.draggable p');
     const dropzones = document.querySelectorAll('.dropzone');
-    const draggableContainer = document.getElementById('draggable');
     const verifyButton = document.getElementById('verify');
     let currentIndex = 0;
 
-    paragraphs.forEach(p => {
-        p.addEventListener('dragstart', dragStart);
-    });
-
+    paragraphs.forEach(p => p.addEventListener('dragstart', dragStart));
     dropzones.forEach(zone => {
-        zone.addEventListener('dragover', dragOver);
+        zone.addEventListener('dragover', e => e.preventDefault());
         zone.addEventListener('drop', drop);
     });
 
     function dragStart(e) {
         e.dataTransfer.setData('text/plain', e.target.id);
-    }
-
-    function dragOver(e) {
-        e.preventDefault();
     }
 
     function drop(e) {
@@ -28,11 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const draggableElement = document.getElementById(id);
         e.target.appendChild(draggableElement);
 
+        toggleVisibility();
+    }
+
+    function toggleVisibility() {
+        paragraphs[currentIndex].classList.replace('visible', 'hidden');
         currentIndex++;
         if (currentIndex < paragraphs.length) {
-            paragraphs[currentIndex].style.display = 'block';
+            paragraphs[currentIndex].classList.replace('hidden', 'visible');
         } else {
-            verifyButton.style.display = 'block';
+            verifyButton.classList.replace('hidden', 'visible');
         }
     }
 });
