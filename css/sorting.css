@@ -13,7 +13,7 @@
     transition: background-color 0.3s;
 }
 
-.draggable p:hover, .draggable button:hover {
+.draggable:hover, .draggable button:hover {
     background-color: #e0e0e0;
 }
 
