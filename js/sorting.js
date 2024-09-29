@@ -51,10 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const id = event.dataTransfer.getData('text/plain');
             const draggableElement = document.getElementById(id);
-            zone.appendChild(draggableElement);
-            draggableElement.classList.remove('visible');
-            draggableElement.classList.add('dropped');
-            updateVisibility();
+            if (draggableElement) {
+                zone.appendChild(draggableElement);
+                draggableElement.classList.remove('visible');
+                draggableElement.classList.add('dropped');
+                updateVisibility();
+            }
         });
     });
 });
