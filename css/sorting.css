@@ -46,7 +46,7 @@
 
 .verify:hover, .retry:hover {
     background-color: #45a049;
-    cursor: click;
+    cursor: pointer;
 }
 
 table {
