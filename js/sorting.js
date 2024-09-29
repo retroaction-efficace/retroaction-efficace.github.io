@@ -3,6 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const paragraphs = draggableContainer.querySelectorAll('p');
     const button = draggableContainer.querySelector('button.verify');
 
+    const correctPlacements = {
+        'p1': 0,
+        'p5': 0,
+        'p3': 1,
+        'p8': 1,
+        'p2': 2,
+        'p7': 2,
+        'p4': 3,
+        'p6': 3
+    };
+
     // Function to update visibility of elements
     function updateVisibility() {
         let visibleCount = 0;
@@ -58,6 +69,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 draggableElement.classList.add('dropped');
                 updateVisibility();
             }
+        });
+    });
+
+    // Verify button functionality
+    button.addEventListener('click', function() {
+        dropzones.forEach((zone, index) => {
+            const children = zone.children;
+            Array.from(children).forEach(child => {
+                if (correctPlacements[child.id] === index) {
+                    child.style.backgroundColor = 'green';
+                } else {
+                    child.style.backgroundColor = 'red';
+                }
+            });
         });
     });
 });
