@@ -9,7 +9,6 @@
     padding: 25px;
     background-color: #f9f9f9;
     transition: background-color 0.3s;
-    cursor: grab;
 }
 
 .draggable p:hover {
@@ -44,7 +43,6 @@
 
 .correct {
     color: green;
-    text-align: center;
     margin: 0 auto 20px;
 }
 
@@ -53,7 +51,7 @@
 }
 
 table {
-    width: 98%;
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     table-layout: fixed;
