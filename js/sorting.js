@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const draggableContainer = document.getElementById('draggable');
     const paragraphs = draggableContainer.querySelectorAll('p');
-    const button = document.querySelector('button.verify'); // Updated to select the button outside the container
+    const verifyButton = document.querySelector('button.verify');
+    const retryButton = document.querySelector('button.retry');
 
     const correctPlacements = {
         'p1': 0,
@@ -33,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextParagraph.classList.remove('hidden');
                 nextParagraph.classList.add('visible');
             } else {
-                button.classList.remove('hidden');
-                button.classList.add('visible');
+                verifyButton.classList.remove('hidden');
+                verifyButton.classList.add('visible');
                 draggableContainer.style.background = 'none';
                 draggableContainer.style.outline = 'none';
                 draggableContainer.style.display = 'none'; // Hide the container
@@ -73,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Verify button functionality
-    button.addEventListener('click', function() {
+    verifyButton.addEventListener('click', function() {
         dropzones.forEach((zone, index) => {
             const children = zone.children;
             Array.from(children).forEach(child => {
@@ -84,5 +85,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+        verifyButton.classList.remove('visible');
+        verifyButton.classList.add('hidden');
+        retryButton.classList.remove('hidden');
+        retryButton.classList.add('visible');
+    });
+
+    // Retry button functionality
+    retryButton.addEventListener('click', function() {
+        paragraphs.forEach(p => {
+            p.classList.remove('dropped');
+            p.classList.remove('hidden');
+            p.classList.add('visible');
+            p.style.color = ''; // Reset text color
+            draggableContainer.appendChild(p);
+        });
+        dropzones.forEach(zone => {
+            while (zone.firstChild) {
+                zone.removeChild(zone.firstChild);
+            }
+        });
+        draggableContainer.style.display = ''; // Show the container
+        draggableContainer.style.background = ''; // Reset background
+        draggableContainer.style.outline = ''; // Reset outline
+        verifyButton.classList.remove('hidden');
+        verifyButton.classList.add('visible');
+        retryButton.classList.remove('visible');
+        retryButton.classList.add('hidden');
+        updateVisibility();
     });
 });
