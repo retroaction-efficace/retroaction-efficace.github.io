@@ -1,33 +1,35 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #e0f7fa; /* Light cyan background */
+    background-color: #f7f7f7; /* Very light grey background */
+    color: #333333; /* Dark grey text */
 }
 
 p {
     text-align: justify;
     line-height: 1.8;
-    color: #333333;
+    color: #555555; /* Medium grey text */
 }
 
 a {
-    color: #ff4081; /* Bright pink links */
+    color: #007bff; /* Professional blue links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #c2185b; /* Darker pink on hover */
+    color: #0056b3; /* Darker blue on hover */
 }
 
 header {
-    background-color: #3f51b5; /* Indigo */
+    background-color: #343a40; /* Dark grey */
     color: #ffffff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em; /* Larger font size for header */
 }
 
 nav {
@@ -39,8 +41,9 @@ nav {
 
 nav a {
     margin: 0 20px;
-    color: #3f51b5; /* Matching the header color */
+    color: #343a40; /* Matching the header color */
     font-weight: bold;
+    font-size: 1.1em; /* Slightly larger font size for nav links */
 }
 
 main {
@@ -55,8 +58,8 @@ aside {
     display: flex;
     align-items: center;
     padding: 20px 50px;
-    background-color: #e0f7fa; /* Matching the body background */
-    border-left: 5px solid #ff4081;
+    background-color: #f7f7f7; /* Matching the body background */
+    border-left: 5px solid #007bff;
 }
 
 aside img {
@@ -79,7 +82,7 @@ aside img {
 
 .box li {
     flex: 1 1 200px;
-    background-color: #ffe0b2; /* Light orange */
+    background-color: #e9ecef; /* Light grey */
     color: #333333;
     padding: 20px;
     margin: 15px;
@@ -127,7 +130,7 @@ aside img {
 }
 
 footer {
-    background-color: #3f51b5;
+    background-color: #343a40;
     color: #ffffff;
     padding: 15px;
     display: flex;
@@ -138,4 +141,5 @@ footer {
     bottom: 0;
     box-sizing: border-box;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em; /* Slightly smaller font size for footer */
 }
