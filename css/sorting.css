@@ -45,7 +45,7 @@
 .correct {
     color: green;
     text-align: center;
-    margin-top: 20px;
+    margin: 0 auto 20px;
 }
 
 .no-drag {
