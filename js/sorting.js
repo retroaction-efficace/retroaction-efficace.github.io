@@ -1,48 +1,59 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('.draggable li');
-    const paragraphs = document.querySelectorAll('.draggable p');
-    const dropzones = document.querySelectorAll('.dropzone');
-    const verifyButton = document.querySelector('.verify');
+document.addEventListener('DOMContentLoaded', function() {
     const draggableContainer = document.getElementById('draggable');
-    let currentIndex = 0;
+    const paragraphs = draggableContainer.querySelectorAll('p');
+    const button = draggableContainer.querySelector('button.verify');
 
-    listItems[currentIndex].classList.replace('hidden', 'visible');
-
-    paragraphs.forEach(p => {
-        p.addEventListener('dragstart', dragStart);
-        p.setAttribute('draggable', 'true');
-    });
-
-    verifyButton.addEventListener('dragstart', dragStart);
-
-    dropzones.forEach(zone => {
-        zone.addEventListener('dragover', e => {
-            e.preventDefault();
-        });
-        zone.addEventListener('drop', drop);
-    });
-
-    function dragStart(e) {
-        e.dataTransfer.setData('text/plain', e.target.id);
-    }
-
-    function drop(e) {
-        e.preventDefault();
-        const id = e.dataTransfer.getData('text/plain');
-        const draggableElement = document.getElementById(id);
-
-        if (e.target.children.length === 0) {
-            e.target.appendChild(draggableElement);
-            draggableElement.classList.replace('visible', 'dropped');
-            if (draggableContainer.querySelectorAll('p.visible').length === 0) {
-                if (currentIndex < listItems.length - 1) {
-                    listItems[++currentIndex].classList.replace('hidden', 'visible');
-                } else {
-                    draggableContainer.style.background = 'none';
-                    draggableContainer.style.border = 'none';
-                    verifyButton.classList.replace('hidden', 'visible');
+    // Function to update visibility of elements
+    function updateVisibility() {
+        let visibleCount = 0;
+        paragraphs.forEach(p => {
+            if (p.classList.contains('visible')) {
+                visibleCount++;
+                if (visibleCount > 1) {
+                    p.classList.remove('visible');
+                    p.classList.add('hidden');
                 }
+            }
+        });
+
+        if (visibleCount === 0) {
+            const nextParagraph = Array.from(paragraphs).find(p => !p.classList.contains('dropped') && p.classList.contains('hidden'));
+            if (nextParagraph) {
+                nextParagraph.classList.remove('hidden');
+                nextParagraph.classList.add('visible');
+            } else {
+                button.classList.remove('hidden');
+                button.classList.add('visible');
+                draggableContainer.style.background = 'none';
+                draggableContainer.style.outline = 'none';
             }
         }
     }
+
+    // Initial visibility update
+    updateVisibility();
+
+    // Drag and drop functionality
+    paragraphs.forEach(p => {
+        p.addEventListener('dragstart', function(event) {
+            event.dataTransfer.setData('text/plain', event.target.id);
+        });
+    });
+
+    const dropzones = document.querySelectorAll('.dropzone');
+    dropzones.forEach(zone => {
+        zone.addEventListener('dragover', function(event) {
+            event.preventDefault();
+        });
+
+        zone.addEventListener('drop', function(event) {
+            event.preventDefault();
+            const id = event.dataTransfer.getData('text/plain');
+            const draggableElement = document.getElementById(id);
+            zone.appendChild(draggableElement);
+            draggableElement.classList.remove('visible');
+            draggableElement.classList.add('dropped');
+            updateVisibility();
+        });
+    });
 });
