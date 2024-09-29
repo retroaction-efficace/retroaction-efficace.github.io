@@ -5,20 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const draggableContainer = document.getElementById('draggable');
     let currentIndex = 0;
 
-    paragraphs.forEach(p => p.addEventListener('dragstart', dragStart));
+    paragraphs.forEach(p => {
+        p.addEventListener('dragstart', dragStart);
+        p.setAttribute('draggable', 'true'); // Ensure elements are draggable
+    });
     dropzones.forEach(zone => {
-        zone.addEventListener('dragover', e => e.preventDefault());
+        zone.addEventListener('dragover', e => {
+            e.preventDefault();
+            console.log('Drag over event'); // Debugging log
+        });
         zone.addEventListener('drop', drop);
     });
 
     function dragStart(e) {
         e.dataTransfer.setData('text/plain', e.target.id);
+        console.log('Drag start event:', e.target.id); // Debugging log
     }
 
     function drop(e) {
         e.preventDefault();
         const id = e.dataTransfer.getData('text');
         const draggableElement = document.getElementById(id);
+        console.log('Drop event:', id); // Debugging log
 
         // Vérifie si la zone de dépôt est vide avant d'ajouter l'élément
         if (e.target.children.length === 0) {
