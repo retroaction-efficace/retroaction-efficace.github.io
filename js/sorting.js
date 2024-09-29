@@ -15,15 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'p6': 3
     };
 
-    // Function to update visibility of elements
     function updateVisibility() {
         let visibleCount = 0;
         paragraphs.forEach(p => {
             if (p.classList.contains('visible')) {
                 visibleCount++;
                 if (visibleCount > 1) {
-                    p.classList.remove('visible');
-                    p.classList.add('hidden');
+                    p.classList.replace('visible', 'hidden');
                 }
             }
         });
@@ -31,37 +29,25 @@ document.addEventListener('DOMContentLoaded', function() {
         if (visibleCount === 0) {
             const nextParagraph = Array.from(paragraphs).find(p => !p.classList.contains('dropped') && p.classList.contains('hidden'));
             if (nextParagraph) {
-                nextParagraph.classList.remove('hidden');
-                nextParagraph.classList.add('visible');
+                nextParagraph.classList.replace('hidden', 'visible');
             } else {
-                draggableContainer.style.background = 'none';
-                draggableContainer.style.outline = 'none';
-                draggableContainer.style.display = 'none'; // Hide the container
+                draggableContainer.style.display = 'none';
             }
         }
     }
 
-    // Function to check if all paragraphs are placed
     function checkAllPlaced() {
         const allPlaced = Array.from(paragraphs).every(p => p.classList.contains('dropped'));
-        if (allPlaced) {
-            verifyButton.classList.remove('hidden');
-            verifyButton.classList.add('visible');
-        } else {
-            verifyButton.classList.remove('visible');
-            verifyButton.classList.add('hidden');
-        }
+        verifyButton.classList.toggle('visible', allPlaced);
+        verifyButton.classList.toggle('hidden', !allPlaced);
     }
 
-    // Initial visibility update
     updateVisibility();
 
-    // Drag and drop functionality
-    paragraphs.forEach(p => {
-        p.setAttribute('draggable', true);
-        p.addEventListener('dragstart', function(event) {
+    draggableContainer.addEventListener('dragstart', function(event) {
+        if (event.target.tagName === 'P') {
             event.dataTransfer.setData('text/plain', event.target.id);
-        });
+        }
     });
 
     const dropzones = document.querySelectorAll('.dropzone');
@@ -76,39 +62,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const draggableElement = document.getElementById(id);
             if (draggableElement) {
                 zone.appendChild(draggableElement);
-                draggableElement.classList.remove('visible');
-                draggableElement.classList.add('dropped');
+                draggableElement.classList.replace('visible', 'dropped');
                 updateVisibility();
                 checkAllPlaced();
             }
         });
     });
 
-    // Verify button functionality
     verifyButton.addEventListener('click', function() {
         dropzones.forEach((zone, index) => {
-            const children = zone.children;
-            Array.from(children).forEach(child => {
-                if (correctPlacements[child.id] === index) {
-                    child.style.color = 'green';
-                } else {
-                    child.style.color = 'red';
-                }
+            Array.from(zone.children).forEach(child => {
+                child.style.color = correctPlacements[child.id] === index ? 'green' : 'red';
             });
         });
-        verifyButton.classList.remove('visible');
-        verifyButton.classList.add('hidden');
-        retryButton.classList.remove('hidden');
-        retryButton.classList.add('visible');
+        verifyButton.classList.replace('visible', 'hidden');
+        retryButton.classList.replace('hidden', 'visible');
     });
 
-    // Retry button functionality
     retryButton.addEventListener('click', function() {
         paragraphs.forEach(p => {
-            p.classList.remove('dropped');
-            p.classList.remove('hidden');
+            p.classList.remove('dropped', 'hidden');
             p.classList.add('visible');
-            p.style.color = ''; // Reset text color
+            p.style.color = ''; 
             draggableContainer.appendChild(p);
         });
         dropzones.forEach(zone => {
@@ -116,13 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 zone.removeChild(zone.firstChild);
             }
         });
-        draggableContainer.style.display = ''; 
-        draggableContainer.style.background = '';
-        draggableContainer.style.outline = '';
-        verifyButton.classList.remove('visible');
-        verifyButton.classList.add('hidden');
-        retryButton.classList.remove('visible');
-        retryButton.classList.add('hidden');
+        draggableContainer.style.display = '';
+        verifyButton.classList.replace('visible', 'hidden');
+        retryButton.classList.replace('visible', 'hidden');
         updateVisibility();
     });
 });
