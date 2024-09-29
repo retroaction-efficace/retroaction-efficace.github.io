@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const draggableContainer = document.getElementById('draggable');
     let currentIndex = 0;
 
-    // Initialize the first item as visible
     listItems[currentIndex].classList.replace('hidden', 'visible');
 
     paragraphs.forEach(p => {
@@ -24,22 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function dragStart(e) {
-        e.dataTransfer.setData('text/plain', e.target.innerHTML);
+        e.dataTransfer.setData('text/plain', e.target.id);
     }
 
     function drop(e) {
         e.preventDefault();
-        const data = e.dataTransfer.getData('text/plain');
-        const draggableElement = Array.from(paragraphs).find(p => p.innerHTML === data) || verifyButton;
+        const id = e.dataTransfer.getData('text/plain');
+        const draggableElement = document.getElementById(id);
+
         if (e.target.children.length === 0) {
             e.target.appendChild(draggableElement);
             draggableElement.classList.replace('visible', 'dropped');
-            if (currentIndex < listItems.length - 1) {
-                listItems[++currentIndex].classList.replace('hidden', 'visible');
-            } else {
-                draggableContainer.style.background = 'none';
-                draggableContainer.style.border = 'none';
-                verifyButton.classList.replace('hidden', 'visible');
+            if (draggableContainer.querySelectorAll('p.visible').length === 0) {
+                if (currentIndex < listItems.length - 1) {
+                    listItems[++currentIndex].classList.replace('hidden', 'visible');
+                } else {
+                    draggableContainer.style.background = 'none';
+                    draggableContainer.style.border = 'none';
+                    verifyButton.classList.replace('hidden', 'visible');
+                }
             }
         }
     }
