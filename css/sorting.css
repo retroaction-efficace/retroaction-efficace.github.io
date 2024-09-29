@@ -27,7 +27,6 @@
 
 .visible, .dropped {
     display: block;
-    cursor: grab;
 }
 
 .verify, .retry {
@@ -45,12 +44,16 @@
 
 .correct {
     color: green;
-    margin: 0 auto 20px;
-    cursor: text;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-drag {
+    cursor: default;
 }
 
 table {
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     table-layout: fixed;
