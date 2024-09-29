@@ -27,6 +27,7 @@
 
 .visible, .dropped {
     display: block;
+    cursor: grab;
 }
 
 .verify, .retry {
