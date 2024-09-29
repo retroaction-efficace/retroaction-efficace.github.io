@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const verifyButton = document.querySelector('button.verify');
     const retryButton = document.querySelector('button.retry');
     const excellentMessage = document.querySelector('.correct');
+    const dropzones = document.querySelectorAll('.dropzone');
 
     const correctPlacements = {
         'p1': 0,
@@ -51,13 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     paragraphs.forEach(p => {
-        p.classList.add('hidden'); // Initially hide all paragraphs
+        p.classList.add('hidden');
         attachDragStartEvent(p);
     });
 
-    updateVisibility(); // Ensure visibility is updated after initial hiding
+    updateVisibility();
 
-    const dropzones = document.querySelectorAll('.dropzone');
     dropzones.forEach(zone => {
         zone.addEventListener('dragover', function(event) {
             event.preventDefault();
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (draggableElement) {
                 zone.appendChild(draggableElement);
                 draggableElement.classList.replace('visible', 'dropped');
-                attachDragStartEvent(draggableElement); // Reattach dragstart event
+                attachDragStartEvent(draggableElement);
                 updateVisibility();
                 checkAllPlaced();
             }
