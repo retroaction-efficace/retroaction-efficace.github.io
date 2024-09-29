@@ -20,14 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const draggableElement = document.getElementById(id);
         e.target.appendChild(draggableElement);
 
-        toggleVisibility();
-    }
+        draggableElement.classList.replace('visible', 'dropped');
 
-    function toggleVisibility() {
-        paragraphs[currentIndex].classList.replace('visible', 'hidden');
-        currentIndex++;
-        if (currentIndex < paragraphs.length) {
-            paragraphs[currentIndex].classList.replace('hidden', 'visible');
+        if (currentIndex < paragraphs.length - 1) {
+            paragraphs[++currentIndex].classList.replace('hidden', 'visible');
         } else {
             verifyButton.classList.replace('hidden', 'visible');
         }
