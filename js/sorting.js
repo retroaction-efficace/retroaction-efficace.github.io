@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const paragraphs = draggableContainer.querySelectorAll('p');
     const verifyButton = document.querySelector('button.verify');
     const retryButton = document.querySelector('button.retry');
+    const excellentMessage = document.createElement('div');
+    excellentMessage.textContent = 'Excellent! Toutes les réponses sont correctes.';
+    excellentMessage.style.display = 'none';
+    excellentMessage.style.color = 'black';
+    excellentMessage.style.textAlign = 'center';
+    excellentMessage.style.marginTop = '20px';
+    document.body.appendChild(excellentMessage);
 
     const correctPlacements = {
         'p1': 0,
@@ -70,13 +77,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     verifyButton.addEventListener('click', function() {
+        let allCorrect = true;
         dropzones.forEach((zone, index) => {
             Array.from(zone.children).forEach(child => {
-                child.style.color = correctPlacements[child.id] === index ? 'green' : 'red';
+                if (correctPlacements[child.id] === index) {
+                    child.style.color = 'green';
+                } else {
+                    child.style.color = 'red';
+                    allCorrect = false;
+                }
             });
         });
         verifyButton.classList.replace('visible', 'hidden');
-        retryButton.classList.replace('hidden', 'visible');
+        if (allCorrect) {
+            excellentMessage.style.display = 'block';
+        } else {
+            retryButton.classList.replace('hidden', 'visible');
+        }
     });
 
     retryButton.addEventListener('click', function() {
@@ -94,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         draggableContainer.style.display = '';
         verifyButton.classList.replace('visible', 'hidden');
         retryButton.classList.replace('visible', 'hidden');
+        excellentMessage.style.display = 'none';
         updateVisibility();
     });
 });
