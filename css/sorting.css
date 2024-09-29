@@ -46,7 +46,6 @@ th {
     color: white;
     border: none;
     cursor: pointer;
-    display: block;
 }
 
 #verify:hover {
