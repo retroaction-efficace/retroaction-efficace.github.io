@@ -43,9 +43,20 @@
         <p>L'<b>apprenant lui-même</b> peut être le sujet de la rétroaction. L'apprenant reçoit alors une remarque touchant à des attributs personnels tels que sa personnalité, ses efforts ou ses attitudes.</p>
       </li>
     </ul>
-    <main>
+    <aside>
       <p>Classifie les rétroactions ci-dessous en les glissant dans la colonne appropriée.</p>
-    </main>
+      <div class="draggable", id="draggable">
+      <p draggable="true" id="p1" class="visible">« Ce n'est pas la bonne réponse. »</p>
+      <p draggable="true" id="p2" class="hidden">« Comment as-tu obtenu cette réponse ? »</p>
+      <p draggable="true" id="p3" class="hidden">« Ton manuel est là pour t'aider, pense à l'utiliser. »</p>
+      <p draggable="true" id="p4" class="hidden">« Tu es un champion ! »</p>
+      <p draggable="true" id="p5" class="hidden">« Excellente réponse ! »</p>
+      <p draggable="true" id="p6" class="hidden">« Tu ne fais pas assez d'efforts. »</p>
+      <p draggable="true" id="p7" class="hidden">« Comment pourrais-tu améliorer ton travail ? »</p>
+      <p draggable="true" id="p8" class="hidden">« Ton astuce mnémotechnique fonctionne à merveille. »</p>
+      <button id="verify" class="hidden">Vérifier</button>
+      </div>
+    </aside>
     <table class="sorting">
         <thead>
             <tr>
@@ -64,17 +75,6 @@
             </tr>
         </tbody>
     </table>
-    <div class="draggable", id="draggable">
-      <p draggable="true" id="p1" class="visible">« Ce n'est pas la bonne réponse. »</p>
-      <p draggable="true" id="p2" class="hidden">« Comment as-tu obtenu cette réponse ? »</p>
-      <p draggable="true" id="p3" class="hidden">« Ton manuel est là pour t'aider, pense à l'utiliser. »</p>
-      <p draggable="true" id="p4" class="hidden">« Tu es un champion ! »</p>
-      <p draggable="true" id="p5" class="hidden">« Excellente réponse ! »</p>
-      <p draggable="true" id="p6" class="hidden">« Tu ne fais pas assez d'efforts. »</p>
-      <p draggable="true" id="p7" class="hidden">« Comment pourrais-tu améliorer ton travail ? »</p>
-      <p draggable="true" id="p8" class="hidden">« Ton astuce mnémotechnique fonctionne à merveille. »</p>
-      <button id="verify" class="hidden">Vérifier</button>
-    </div>
     <footer></footer>
     <script src="js/fetch.js"></script>
     <script src="js/sorting.js"></script>
