@@ -19,17 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const id = e.dataTransfer.getData('text');
         const draggableElement = document.getElementById(id);
-t
+
+        // Vérifie si la zone de dépôt est vide avant d'ajouter l'élément
         if (e.target.children.length === 0) {
             e.target.appendChild(draggableElement);
             draggableElement.classList.replace('visible', 'dropped');
 
+            // Affiche le prochain élément uniquement si un élément a été déposé dans une zone vide
             if (currentIndex < paragraphs.length - 1) {
                 paragraphs[++currentIndex].classList.replace('hidden', 'visible');
-                
             } else {
                 dropzones.forEach(zone => zone.classList.add('hidden'));
-                draggableContainer.style.display = 'none';
+                draggableContainer.style.display = 'none'; // Masquer le conteneur draggable
                 verifyButton.classList.replace('hidden', 'visible');
             }
         }
