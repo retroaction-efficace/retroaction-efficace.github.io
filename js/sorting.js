@@ -61,14 +61,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Initiate drag on mousedown inside the container
     draggableContainer.addEventListener('mousedown', function(event) {
         const closestParagraph = event.target.closest('p');
         if (closestParagraph) {
+            const dataTransfer = new DataTransfer();
+            dataTransfer.setData('text/plain', closestParagraph.id);
+
             const dragEvent = new DragEvent('dragstart', {
                 bubbles: true,
                 cancelable: true,
-                dataTransfer: new DataTransfer()
+                dataTransfer: dataTransfer
             });
+
             closestParagraph.dispatchEvent(dragEvent);
         }
     });
