@@ -1,18 +1,17 @@
 .draggable {
-    border: 1px solid #ddd;
     margin: 0 auto 20px auto;
-    padding: 10px;
-    background-color: #f9f9f9;
     display: inline-block;
     width: fit-content;
-    transition: background-color 0.3s;
 }
 
 .draggable p {
-    padding: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
 }
 
-.draggable:hover {
+.draggable p:hover {
     background-color: #e0e0e0;
     cursor: grab;
 }
