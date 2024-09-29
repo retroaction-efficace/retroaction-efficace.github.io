@@ -18,10 +18,11 @@ th {
 
 .draggable {
     border: 1px solid #ddd;
-    margin: 20px;
+    margin: 0 auto 20px auto;
     padding: 10px;
     background-color: #f9f9f9;
     display: inline-block;
+    width: fit-content;
 }
 
 .draggable p {
