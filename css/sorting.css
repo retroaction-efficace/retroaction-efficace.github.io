@@ -42,6 +42,11 @@
     background-color: #45a049;
 }
 
+.correct {
+    color: green;
+    margin: 0 auto 20px;
+}
+
 table {
     width: 90%;
     margin: 20px auto;
