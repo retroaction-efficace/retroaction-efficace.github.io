@@ -26,7 +26,7 @@ a:hover {
 }
 
 header {
-    witdh: 100%;
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -34,7 +34,7 @@ header {
 }
 
 nav {
-    width: 100%
+    width: 100%;
     background-color: #444;
     color: white;
     padding: 10px;
