@@ -23,15 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         draggableElement.classList.replace('visible', 'dropped');
 
-        // Vérifie si toutes les zones de dépôt contiennent un élément
-        const allDropzonesFilled = Array.from(dropzones).every(zone => zone.children.length > 0);
-
-        if (allDropzonesFilled) {
+        // Vérifie si la zone de dépôt contient un élément
+        if (e.target.children.length > 0) {
             if (currentIndex < paragraphs.length - 1) {
                 paragraphs[++currentIndex].classList.replace('hidden', 'visible');
             } else {
                 dropzones.forEach(zone => zone.classList.add('hidden'));
-                draggableContainer.style.display = 'none'; // Masquer le conteneur draggable
+                draggableContainer.style.display = 'none';
                 verifyButton.classList.replace('hidden', 'visible');
             }
         }
