@@ -43,13 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
         verifyButton.classList.toggle('hidden', !allPlaced);
     }
 
-    updateVisibility();
-
-    draggableContainer.addEventListener('dragstart', function(event) {
-        if (event.target.tagName === 'P') {
+    function attachDragStartEvent(element) {
+        element.setAttribute('draggable', true);
+        element.addEventListener('dragstart', function(event) {
             event.dataTransfer.setData('text/plain', event.target.id);
-        }
-    });
+        });
+    }
+
+    paragraphs.forEach(p => attachDragStartEvent(p));
 
     const dropzones = document.querySelectorAll('.dropzone');
     dropzones.forEach(zone => {
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (draggableElement) {
                 zone.appendChild(draggableElement);
                 draggableElement.classList.replace('visible', 'dropped');
+                attachDragStartEvent(draggableElement); // Reattach dragstart event
                 updateVisibility();
                 checkAllPlaced();
             }
