@@ -59,9 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateVisibility();
 
     dropzones.forEach(zone => {
-        zone.addEventListener('dragover', function(event) {
-            event.preventDefault();
-        });
+        zone.addEventListener('dragover', event => event.preventDefault());
 
         zone.addEventListener('drop', function(event) {
             event.preventDefault();
@@ -92,7 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
         verifyButton.classList.replace('visible', 'hidden');
         if (allCorrect) {
             excellentMessage.classList.replace('hidden', 'visible');
-            paragraphs.forEach(p => p.removeAttribute('draggable'));
+            paragraphs.forEach(p => {
+                p.removeAttribute('draggable');
+                p.classList.add('no-drag');
+            });
         } else {
             retryButton.classList.replace('hidden', 'visible');
         }
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     retryButton.addEventListener('click', function() {
         paragraphs.forEach(p => {
-            p.classList.remove('dropped', 'hidden');
+            p.classList.remove('dropped', 'hidden', 'no-drag');
             p.classList.add('visible');
             p.style.color = ''; 
             draggableContainer.appendChild(p);
