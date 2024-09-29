@@ -61,3 +61,7 @@ th {
 .visible {
     display: block;
 }
+
+.dropped {
+    display: block;
+}
