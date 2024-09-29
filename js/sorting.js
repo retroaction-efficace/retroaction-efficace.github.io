@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             paragraphs[++currentIndex].classList.replace('hidden', 'visible');
         } else {
             dropzones.forEach(zone => zone.classList.add('hidden'));
-            draggableContainer.replaceWith(verifyButton);
+            draggableContainer.style.display = 'none'; // Masquer le conteneur draggable
             verifyButton.classList.replace('hidden', 'visible');
         }
     }
