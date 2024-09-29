@@ -7,12 +7,6 @@
     width: fit-content;
 }
 
-.draggable ol {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 .draggable p, .draggable button {
     margin: 10px 0;
     cursor: grab;
@@ -40,7 +34,7 @@
     display: block;
 }
 
-#verify {
+.verify {
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -49,7 +43,7 @@
     cursor: pointer;
 }
 
-#verify:hover {
+.verify:hover {
     background-color: #45a049;
 }
 
