@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Drag and drop functionality
     paragraphs.forEach(p => {
+        p.setAttribute('draggable', true);
         p.addEventListener('dragstart', function(event) {
             event.dataTransfer.setData('text/plain', event.target.id);
         });
