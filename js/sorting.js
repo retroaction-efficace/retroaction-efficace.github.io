@@ -50,7 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    paragraphs.forEach(p => attachDragStartEvent(p));
+    paragraphs.forEach(p => {
+        p.classList.add('hidden'); // Initially hide all paragraphs
+        attachDragStartEvent(p);
+    });
+
+    updateVisibility(); // Ensure visibility is updated after initial hiding
 
     const dropzones = document.querySelectorAll('.dropzone');
     dropzones.forEach(zone => {
