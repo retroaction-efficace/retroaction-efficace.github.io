@@ -26,10 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.classList.add('visible');
                 draggableContainer.style.background = 'none';
                 draggableContainer.style.outline = 'none';
+                draggableContainer.style.display = 'none'; // Hide the container
             }
         }
     }
 
+    // Initial visibility update
     updateVisibility();
 
     // Drag and drop functionality
