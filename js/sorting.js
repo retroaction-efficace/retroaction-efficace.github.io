@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const draggableContainer = document.getElementById('draggable');
     const paragraphs = draggableContainer.querySelectorAll('p');
-    const button = draggableContainer.querySelector('button.verify');
+    const button = document.querySelector('button.verify'); // Updated to select the button outside the container
 
     const correctPlacements = {
         'p1': 0,
