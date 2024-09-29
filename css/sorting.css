@@ -5,11 +5,11 @@
     background-color: #f9f9f9;
     display: inline-block;
     width: fit-content;
+    transition: background-color 0.3s;
 }
 
 .draggable p {
     padding: 10px 0;
-    transition: background-color 0.3s;
 }
 
 .draggable:hover {
