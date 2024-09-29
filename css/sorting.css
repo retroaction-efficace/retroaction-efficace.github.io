@@ -34,7 +34,7 @@
     display: block;
 }
 
-.verify {
+.verify, .retry {
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.verify:hover {
+.verify:hover, .retry:hover {
     background-color: #45a049;
 }
 
