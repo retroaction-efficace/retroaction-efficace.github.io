@@ -23,12 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         draggableElement.classList.replace('visible', 'dropped');
 
-        if (currentIndex < paragraphs.length - 1) {
-            paragraphs[++currentIndex].classList.replace('hidden', 'visible');
-        } else {
-            dropzones.forEach(zone => zone.classList.add('hidden'));
-            draggableContainer.style.display = 'none'; // Masquer le conteneur draggable
-            verifyButton.classList.replace('hidden', 'visible');
+        // Vérifie si toutes les zones de dépôt contiennent un élément
+        const allDropzonesFilled = Array.from(dropzones).every(zone => zone.children.length > 0);
+
+        if (allDropzonesFilled) {
+            if (currentIndex < paragraphs.length - 1) {
+                paragraphs[++currentIndex].classList.replace('hidden', 'visible');
+            } else {
+                dropzones.forEach(zone => zone.classList.add('hidden'));
+                draggableContainer.style.display = 'none'; // Masquer le conteneur draggable
+                verifyButton.classList.replace('hidden', 'visible');
+            }
         }
     }
 });
