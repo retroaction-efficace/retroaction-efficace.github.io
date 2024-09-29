@@ -51,6 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function resizeParagraphsInDropzones() {
+        dropzones.forEach(zone => {
+            Array.from(zone.children).forEach(child => {
+                if (child.tagName === 'P') {
+                    child.style.fontSize = '0.8em';
+                }
+            });
+        });
+    }
+
     paragraphs.forEach(p => {
         p.classList.add('hidden');
         attachDragStartEvent(p);
@@ -69,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 zone.appendChild(draggableElement);
                 draggableElement.classList.replace('visible', 'dropped');
                 attachDragStartEvent(draggableElement);
+                resizeParagraphsInDropzones();
                 updateVisibility();
                 checkAllPlaced();
             }
@@ -104,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.classList.remove('dropped', 'hidden', 'no-drag');
             p.classList.add('visible');
             p.style.color = ''; 
+            p.style.fontSize = ''; 
             draggableContainer.appendChild(p);
             attachDragStartEvent(p);
         });
