@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function attachDragStartEvent(element) {
         element.setAttribute('draggable', true);
+        element.style.cursor = 'grab';
         element.addEventListener('dragstart', function(event) {
             event.dataTransfer.setData('text/plain', event.target.id);
         });
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             paragraphs.forEach(p => {
                 p.removeAttribute('draggable');
                 p.classList.add('no-drag');
+                p.style.cursor = 'default';
             });
         } else {
             retryButton.classList.replace('hidden', 'visible');
@@ -116,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             p.classList.add('visible');
             p.style.color = ''; 
             p.style.fontSize = ''; 
+            p.style.cursor = 'grab';
             draggableContainer.appendChild(p);
             attachDragStartEvent(p);
         });
