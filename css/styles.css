@@ -54,7 +54,6 @@ section {
     align-items: center;
     border-radius: 15px;
     padding: 20px;
-    margin: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
     
@@ -73,8 +72,7 @@ img {
 }
 
 table {
-    width: 98%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
@@ -96,7 +94,6 @@ th {
     list-style-type: none;
     padding: 0;
     position: relative;
-    margin: 40px;
 }
 
 .box li {
@@ -104,7 +101,6 @@ th {
     color: var(--dark);
     flex: 1 1 200px;
     padding: 20px;
-    margin: 15px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
