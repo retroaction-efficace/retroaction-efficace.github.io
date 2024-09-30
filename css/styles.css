@@ -10,10 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 p {
     font-family: Arial, sans-serif;
     text-align: justify;
@@ -49,18 +45,20 @@ nav a {
 }
 
 .logo {
+    color: var(--light);
+    background-color: var(--dark);
     display: inline-block;
     width: fit-content;
-    background-color: var(--dark);
-    color: var(--light);
     padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section {
     color: var(--dark);
     background-color: var(--light);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     border-radius: 15px;
     padding: 20px;
