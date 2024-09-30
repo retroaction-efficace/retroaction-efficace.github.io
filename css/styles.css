@@ -36,6 +36,16 @@ header, footer {
     text-align: center;
 }
 
+footer {
+    width: 100%;
+    background-color: var(--bg-head);
+    color: var(--text-light);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 nav {
     width: 100%;
     background-color: var(--bg-nav);
