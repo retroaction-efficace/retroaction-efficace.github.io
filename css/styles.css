@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +14,7 @@ body {
 p {
     text-align: justify;
     line-height: 1.6;
-    color: var(--text-dark); /* Dark grey text color */
+    color: var(--text-dark);
 }
 
 a {
@@ -26,7 +27,8 @@ a:hover {
     color: var(--link-hov);
 }
 
-header {
+/* Header, Navigation and Footer */
+header, footer {
     width: 100%;
     background-color: var(--bg-head);
     color: var(--text-light);
@@ -46,6 +48,7 @@ nav a {
     margin: 0 15px;
 }
 
+/* Main Content */
 main {
     padding: 15px 40px;
 }
@@ -72,6 +75,25 @@ aside img {
     margin: 10px 40px;
 }
 
+/* Table Styles */
+table {
+    width: 98%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid var(--border-light);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--bg-th);
+}
+
+/* Box and Line */
 .box {
     display: flex;
     justify-content: space-around;
@@ -128,19 +150,51 @@ aside img {
     transform: translate(-50%, -50%);
 }
 
-footer {
-    background-color: var(--bg-foot);
-    color: var(--text-light);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    box-sizing: border-box;
+/* Draggable Elements */
+.draggable {
+    margin: 0 auto 20px;
+    display: inline-block;
+    width: fit-content;
 }
 
-header a, nav a, footer a {
-    color: var(--text-light);
+.draggable p {
+    border: 1px solid var(--border-light);
+    padding: 25px;
+    background-color: var(--bg-draggable);
+    transition: background-color 0.3s;
+}
+
+.draggable p:hover {
+    background-color: var(--bg-hover);
+}
+
+.dropzone {
+    border: 1px dashed var(--border-dashed);
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible, .dropped {
+    display: block;
+}
+
+.verify, .retry {
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.verify:hover, .retry:hover {
+    background-color: var(--bg-hover);
+}
+
+.correct {
+    color: var(--text-correct);
+    margin: 0 auto 20px;
+}
+
+.no-drag {
+    cursor: default;
 }
