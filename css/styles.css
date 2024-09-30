@@ -55,15 +55,23 @@ nav a {
 }
 
 section {
+    .row {
     color: var(--dark);
     background-color: var(--light);
     display: flex;
-    flex-direction: row;
     align-items: center;
     border-radius: 15px;
     padding: 20px;
     margin: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
 }
 
 img {
