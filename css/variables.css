@@ -1,9 +1,7 @@
 :root {
-    --bg-main: #f7d569; /* Yellow */
-    --bg-sec: #f7c25a; /* Orange */
-    --bg-acc: #0f111d; /* Blue */
-    --bg--light: #ffffff; /* White */
-    --bg--dark: #0f111d; /* Black */
-    --text-light: #ffffff; /* White */
-    --text-dark: #0f111d; /* Black */
+    --main: #f7d569; /* Yellow */
+    --sec: #f7c25a; /* Orange */
+    --acc: #0f111d; /* Blue */
+    --light: #ffffff; /* White */
+    --dark: #0f111d; /* Black */
 }
