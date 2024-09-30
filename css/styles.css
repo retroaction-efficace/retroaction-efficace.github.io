@@ -55,7 +55,6 @@ nav a {
 }
 
 section {
-    .row {
     color: var(--dark);
     background-color: var(--light);
     display: flex;
