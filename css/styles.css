@@ -56,8 +56,9 @@ header, footer {
 }
 
 .logo {
-    color: var(--main);
+    color: var(--light);
     background-color: var(--dark);
+    border: 1px solid var(--dark);
     font-family: Optima, sans-serif;
     font-weight: 900;
     display: flex;
@@ -69,6 +70,11 @@ header, footer {
     padding: 25px;
     border-radius: 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo:hover: {
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 section {
