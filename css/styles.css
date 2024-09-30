@@ -57,7 +57,7 @@ header, footer {
     font-weight: 900;
     display: inline-block;
     width: fit-content;
-    height: 80px;
+    height: 200px;
     padding: 25px;
     border-radius: 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
