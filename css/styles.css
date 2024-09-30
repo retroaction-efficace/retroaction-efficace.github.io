@@ -117,7 +117,7 @@ th {
 }
 
 .box li {
-    background-color: var(--sec);
+    background-color: var(--grey);
     color: var(--dark);
     border: 1px solid var(--dark);
     flex: 1 1 200px;
