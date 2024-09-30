@@ -47,6 +47,8 @@ nav a {
 .logo {
     color: var(--light);
     background-color: var(--dark);
+    font-family: Optima, sans-serif;
+    font-weight: 900;
     display: inline-block;
     width: fit-content;
     padding: 25px;
