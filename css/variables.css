@@ -1,19 +1,19 @@
 :root {
-    --bg-body: #F0F8FF; /* Alice Blue */
-    --bg-sec: #FAEBD7; /* Antique White */
-    --bg-head: #FFE4C4; /* Bisque */
-    --bg-nav: #FFDEAD; /* Navajo White */
-    --link: #FF4500; /* Orange Red */
-    --link-hov: #FF6347; /* Tomato */
-    --bg-box: #FFF8DC; /* Cornsilk */
-    --bg-line: #FFD700; /* Gold */
-    --bg-foot: #FFEFD5; /* Papaya Whip */
-    --text-light: #2F4F4F; /* Dark Slate Gray */
+    --bg-body: #F5F5F5; /* Light Gray */
+    --bg-sec: #FFFFFF; /* White */
+    --bg-head: #E0E0E0; /* Light Silver */
+    --bg-nav: #D3D3D3; /* Light Gray */
+    --link: #007BFF; /* Blue */
+    --link-hov: #0056b3; /* Dark Blue */
+    --bg-box: #F8F8F8; /* White Smoke */
+    --bg-line: #CCCCCC; /* Silver */
+    --bg-foot: #E0E0E0; /* Light Silver */
+    --text-light: #333333; /* Dark Gray */
     --text-dark: #000000; /* Black */
-    --border-light: #FFDAB9; /* Peach Puff */
-    --bg-hover: #FFE4B5; /* Moccasin */
-    --bg-draggable: #FFFACD; /* Lemon Chiffon */
-    --border-dashed: #FFA07A; /* Light Salmon */
+    --border-light: #CCCCCC; /* Silver */
+    --bg-hover: #D3D3D3; /* Light Gray */
+    --bg-draggable: #FFFFFF; /* White */
+    --border-dashed: #B0C4DE; /* Light Steel Blue */
     --text-correct: #32CD32; /* Lime Green */
-    --bg-th: #FFF5EE; /* Seashell */
+    --bg-th: #F5F5F5; /* Light Gray */
 }
