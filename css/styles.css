@@ -9,6 +9,11 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 p {
@@ -27,31 +32,28 @@ a:hover {
 }
 
 /* Header, Navigation and Footer */
-header {
+header, nav, footer {
     width: 100%;
-    background-color: var(--bg-head);
     color: var(--text-light);
-    padding: 20px;
     text-align: center;
-}
-
-footer {
-    width: 100%;
-    background-color: var(--bg-head);
-    color: var(--text-light);
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
 }
 
+header {
+    background-color: var(--bg-head);
+    padding: 20px;
+}
+
 nav {
-    width: 100%;
     background-color: var(--bg-nav);
-    color: var(--text-light);
-    padding: 10px;
-    text-align: center;
+}
+
+footer {
+    background-color: var(--bg-head);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
