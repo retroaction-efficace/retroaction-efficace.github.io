@@ -1,13 +1,13 @@
 :root {
     --bg-body: #fdf6e3; /* Light Cream */
     --bg-sec: #fffaf0; /* Floral White */
-    --bg-head: #8b0000; /* Dark Red */
-    --bg-nav: #a52a2a; /* Brown */
-    --link: #d2691e; /* Chocolate */
-    --link-hov: #ff4500; /* Orange Red */
+    --bg-head: #8B4513; /* Saddle Brown */
+    --bg-nav: #A0522D; /* Sienna */
+    --link: #CD5C5C; /* Indian Red */
+    --link-hov: #FF6347; /* Tomato */
     --bg-box: #f5e6ca; /* Light Beige */
     --bg-line: #d4a373; /* Warm Beige */
-    --bg-foot: #8b0000; /* Dark Red */
+    --bg-foot: #8B4513; /* Saddle Brown */
     --text-light: #fffaf0; /* Floral White */
     --text-dark: #5a3e36; /* Dark Brown */
     --border-light: #e0c3a3; /* Light Tan */
