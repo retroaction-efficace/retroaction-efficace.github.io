@@ -1,19 +1,19 @@
 :root {
-    --bg-body: #F5F5F5;
-    --bg-sec: #FFFFFF;
-    --bg-head: #E0E0E0;
-    --bg-nav: #D6D6D6;
-    --link: #007BFF;
-    --link-hov: #0056b3;
-    --bg-box: #FFFFFF;
-    --bg-line: #CCCCCC;
-    --bg-foot: #E0E0E0;
-    --text-light: #333333;
-    --text-dark: #000000;
-    --border-light: #CCCCCC;
-    --bg-hover: #D6D6D6;
-    --bg-draggable: #FFFFFF;
-    --border-dashed: #B3B3B3;
-    --text-correct: #28A745;
-    --bg-th: #FFFFFF;
+    --bg-body: #F0F8FF; /* Alice Blue */
+    --bg-sec: #FAEBD7; /* Antique White */
+    --bg-head: #FFE4C4; /* Bisque */
+    --bg-nav: #FFDEAD; /* Navajo White */
+    --link: #FF4500; /* Orange Red */
+    --link-hov: #FF6347; /* Tomato */
+    --bg-box: #FFF8DC; /* Cornsilk */
+    --bg-line: #FFD700; /* Gold */
+    --bg-foot: #FFEFD5; /* Papaya Whip */
+    --text-light: #2F4F4F; /* Dark Slate Gray */
+    --text-dark: #000000; /* Black */
+    --border-light: #FFDAB9; /* Peach Puff */
+    --bg-hover: #FFE4B5; /* Moccasin */
+    --bg-draggable: #FFFACD; /* Lemon Chiffon */
+    --border-dashed: #FFA07A; /* Light Salmon */
+    --text-correct: #32CD32; /* Lime Green */
+    --bg-th: #FFF5EE; /* Seashell */
 }
