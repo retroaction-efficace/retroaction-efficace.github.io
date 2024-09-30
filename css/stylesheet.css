@@ -52,10 +52,10 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    background-color: #e6e8d4;
+    background-color: #f5fffa;
     border-radius: 15px;
     padding: 20px;
-    margin: 20px;
+    margin: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
