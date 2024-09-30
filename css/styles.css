@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: var(--acc);
+    color: var(--sec);
 }
 
 header, nav, footer {
@@ -168,7 +168,7 @@ th {
 }
 
 .draggable p:hover {
-    background-color: var(--acc);
+    background-color: var(--sec);
 }
 
 .dropzone {
@@ -190,7 +190,7 @@ th {
 }
 
 .verify:hover, .retry:hover {
-    background-color: var(--acc);
+    background-color: var(--sec);
 }
 
 .correct {
