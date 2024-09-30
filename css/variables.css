@@ -1,19 +1,19 @@
 :root {
-    --bg-body: #fdf6e3;
-    --bg-sec: #fffaf0;
-    --bg-head: #b23a48;
-    --bg-nav: #d46a6a;
-    --link: #e07b39;
-    --link-hov: #ff9f45;
-    --bg-box: #f5e6ca;
-    --bg-line: #d4a373;
-    --bg-foot: #b23a48;
-    --text-light: #fffaf0;
-    --text-dark: #5a3e36;
-    --border-light: #e0c3a3;
-    --bg-hover: #f0d9b5;
-    --bg-draggable: #f5e6ca;
-    --border-dashed: #c19a6b;
-    --text-correct: #8bc34a;
-    --bg-th: #f5e6ca;
+    --bg-body: #fdf6e3; /* Light Cream */
+    --bg-sec: #fffaf0; /* Floral White */
+    --bg-head: #8b0000; /* Dark Red */
+    --bg-nav: #a52a2a; /* Brown */
+    --link: #d2691e; /* Chocolate */
+    --link-hov: #ff4500; /* Orange Red */
+    --bg-box: #f5e6ca; /* Light Beige */
+    --bg-line: #d4a373; /* Warm Beige */
+    --bg-foot: #8b0000; /* Dark Red */
+    --text-light: #fffaf0; /* Floral White */
+    --text-dark: #5a3e36; /* Dark Brown */
+    --border-light: #e0c3a3; /* Light Tan */
+    --bg-hover: #f0d9b5; /* Pale Beige */
+    --bg-draggable: #f5e6ca; /* Light Beige */
+    --border-dashed: #c19a6b; /* Tan */
+    --text-correct: #8bc34a; /* Green */
+    --bg-th: #f5e6ca; /* Light Beige */
 }
