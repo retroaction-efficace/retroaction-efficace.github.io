@@ -103,7 +103,7 @@ th {
     list-style-type: none;
     padding: 0;
     position: relative;
-    margin: 40px;
+    margin: 40px auto;
 }
 
 .box li {
