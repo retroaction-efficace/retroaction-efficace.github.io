@@ -33,28 +33,14 @@ a:hover {
 
 /* Header, Navigation and Footer */
 header, nav, footer {
+    background-color: var(--main);
     width: 100%;
-    color: var(--main);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-header a, nav a, footer a {
-    color: var(--dark);
-}
-
-header {
-    background-color: var(--main);
-    padding: 20px;
-}
-
-nav {
-    background-color: var(--main);
-}
-
 footer {
-    background-color: var(--main);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,9 +57,9 @@ main {
 
 section {
     color: var(--dark);
+    background-color: var(--light);
     display: flex;
     flex-direction: column;
-    background-color: var(--light);
     border-radius: 15px;
     padding: 20px;
     margin: 40px;
@@ -122,8 +108,9 @@ th {
 }
 
 .box li {
+    background-color: var(--dark);
+    color: var(--light);
     flex: 1 1 200px;
-    background-color: var(--sec);
     padding: 20px;
     margin: 15px;
     box-sizing: border-box;
@@ -176,8 +163,8 @@ th {
 
 .draggable p {
     border: 1px solid var(--dark);
+    background-color: var(--main);
     padding: 25px;
-    background-color: var(--sec);
     transition: background-color 0.3s;
 }
 
@@ -208,7 +195,7 @@ th {
 }
 
 .correct {
-    color: var(--acc);
+    color: var(--sec);
     margin: 0 auto 20px;
 }
 
