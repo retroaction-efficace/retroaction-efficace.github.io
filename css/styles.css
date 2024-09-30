@@ -56,28 +56,19 @@ nav a {
     padding: 25px;
 }
 
-main {
-    padding: 15px 40px;
-}
-
 section {
     color: var(--dark);
     background-color: var(--light);
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: 15px;
     padding: 20px;
     margin: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-aside {
-    display: flex;
-    align-items: center;
-    padding: 15px 40px;
-}
-
-aside img {
+img {
     width: 100px;
     height: 100px;
     margin: 10px 40px;
