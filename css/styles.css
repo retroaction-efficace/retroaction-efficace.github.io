@@ -64,8 +64,6 @@ header, footer {
 section {
     color: var(--dark);
     background-color: var(--light);
-    display: flex;
-    align-items: center;
     border-radius: 15px;
     padding: 20px;
     margin: 20px 0;
@@ -73,10 +71,14 @@ section {
 }
     
 .row {
+    display: flex;
+    align-items: center;
     flex-direction: row;
 }
 
 .column {
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
