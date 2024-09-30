@@ -10,4 +10,10 @@
     --bg-foot: #333;
     --text-light: white;
     --text-dark: #333333;
+    --border-light: #ddd;
+    --bg-hover: #e0e0e0;
+    --bg-draggable: #f9f9f9;
+    --border-dashed: #ccc;
+    --text-correct: green;
+    --bg-th: #f2f2f2;
 }
