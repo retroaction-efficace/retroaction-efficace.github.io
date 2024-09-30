@@ -1,19 +1,19 @@
 :root {
-    --bg-body: #fdf6e3; /* Light Cream */
-    --bg-sec: #fffaf0; /* Floral White */
-    --bg-head: #8B4513; /* Saddle Brown */
-    --bg-nav: #A0522D; /* Sienna */
-    --link: #CD5C5C; /* Indian Red */
-    --link-hov: #FF6347; /* Tomato */
-    --bg-box: #f5e6ca; /* Light Beige */
-    --bg-line: #d4a373; /* Warm Beige */
-    --bg-foot: #8B4513; /* Saddle Brown */
-    --text-light: #fffaf0; /* Floral White */
-    --text-dark: #5a3e36; /* Dark Brown */
-    --border-light: #e0c3a3; /* Light Tan */
-    --bg-hover: #f0d9b5; /* Pale Beige */
-    --bg-draggable: #f5e6ca; /* Light Beige */
-    --border-dashed: #c19a6b; /* Tan */
-    --text-correct: #8bc34a; /* Green */
-    --bg-th: #f5e6ca; /* Light Beige */
+    --bg-body: #fdf6e3;
+    --bg-sec: #fffaf0;
+    --bg-head: #2F4F4F; /* */
+    --bg-nav: #A0522D;
+    --link: #CD5C5C;
+    --link-hov: #FF6347;
+    --bg-box: #f5e6ca;
+    --bg-line: #d4a373;
+    --bg-foot: #2F4F4F; /* */
+    --text-light: #fffaf0;
+    --text-dark: #5a3e36;
+    --border-light: #e0c3a3;
+    --bg-hover: #f0d9b5;
+    --bg-draggable: #f5e6ca;
+    --border-dashed: #c19a6b;
+    --text-correct: #8bc34a;
+    --bg-th: #f5e6ca;
 }
