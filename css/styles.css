@@ -60,7 +60,8 @@ header, footer {
     font-family: Optima, sans-serif;
     font-weight: 900;
     display: flex;
-    align-text: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: fit-content;
     height: 200px;
