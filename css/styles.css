@@ -14,14 +14,6 @@ body {
     box-sizing: inherit;
 }
 
-a h1 {
-    display: inline-block;
-    width: fit-content;
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 25px;
-}
-
 p {
     font-family: Arial, sans-serif;
     text-align: justify;
@@ -54,6 +46,14 @@ footer {
 
 nav a {
     margin: 0 15px;
+}
+
+header.logo {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 25px;
 }
 
 main {
