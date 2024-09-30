@@ -26,7 +26,6 @@ a:hover {
 button {
     color: var(--dark); 
     background-color: var(--light);
-    border: 1px solid var(--dark);
     border-radius: 30px;
     width: 300px;
     padding: 20px;
