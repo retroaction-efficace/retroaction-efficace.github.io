@@ -1,6 +1,6 @@
 body {
     background-color: var(--main);
-    margin: 20px;
+    margin: 10px 40px;
     padding: 0;
     overflow: auto;
     display: flex;
