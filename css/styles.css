@@ -45,14 +45,14 @@ nav a {
 }
 
 .logo {
-    color: var(--light);
+    color: var(--main);
     background-color: var(--dark);
     font-family: Optima, sans-serif;
     font-weight: 900;
     display: inline-block;
     width: fit-content;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
