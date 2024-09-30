@@ -1,13 +1,13 @@
 :root {
     --bg-body: #fdf6e3;
     --bg-sec: #fffaf0;
-    --bg-head: #2F4F4F; /* */
+    --bg-head: #2F4F4F;
     --bg-nav: #A0522D;
     --link: #CD5C5C;
     --link-hov: #FF6347;
     --bg-box: #f5e6ca;
     --bg-line: #d4a373;
-    --bg-foot: #2F4F4F; /* */
+    --bg-foot: #2F4F4F;
     --text-light: #fffaf0;
     --text-dark: #5a3e36;
     --border-light: #e0c3a3;
