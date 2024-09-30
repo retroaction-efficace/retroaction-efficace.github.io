@@ -48,7 +48,7 @@ nav a {
     margin: 0 15px;
 }
 
-header.logo {
+.logo {
     display: inline-block;
     width: fit-content;
     background-color: var(--dark);
