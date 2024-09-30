@@ -1,19 +1,19 @@
 :root {
     --bg-body: #C0CAAD;
-    --bg-sec: #9DA9A0;
-    --bg-head: #654C4F;
-    --bg-nav: #B26E63;
-    --link: #CEC075;
-    --link-hov: #B26E63;
-    --bg-box: #C0CAAD;
-    --bg-line: #9DA9A0;
-    --bg-foot: #654C4F;
+    --bg-sec: #E0E5E3;
+    --bg-head: #4B3B3E;
+    --bg-nav: #A05252;
+    --link: #B89B4A;
+    --link-hov: #A05252;
+    --bg-box: #D5DCC7;
+    --bg-line: #B0B9B3;
+    --bg-foot: #4B3B3E;
     --text-light: #ffffff;
-    --text-dark: #2c3e50;
-    --border-light: #dfe6e9;
-    --bg-hover: #d5dbdb;
-    --bg-draggable: #ecf0f1;
-    --border-dashed: #7f8c8d;
-    --text-correct: #8bc34a;
-    --bg-th: #ecf0f1;
+    --text-dark: #2C3E50;
+    --border-light: #D5DCC7;
+    --bg-hover: #E0E5E3;
+    --bg-draggable: #D5DCC7;
+    --border-dashed: #7F8C8D;
+    --text-correct: #8BC34A;
+    --bg-th: #D5DCC7;
 }
