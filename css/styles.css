@@ -26,22 +26,15 @@ a:hover {
     color: var(--sec);
 }
 
-header, nav, footer {
+header, footer {
     background-color: var(--main);
     width: 100%;
-    text-align: center;
     padding: 20px;
+    text-align: center;
     box-sizing: border-box;
-}
-
-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav a {
-    margin: 0 15px;
 }
 
 .logo {
