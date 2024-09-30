@@ -52,7 +52,7 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    background-color: #f5fffa;
+    background-color: #ffebcd;
     border-radius: 15px;
     padding: 20px;
     margin: 40px;
