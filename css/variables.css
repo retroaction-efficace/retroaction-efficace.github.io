@@ -1,10 +1,10 @@
 :root {
-    --bg-body: #F5F5F5;
+    --bg-body: #F7F9FB;
     --bg-sec: #FFFFFF;
     --bg-head: #2C3E50;
-    --bg-nav: #2980B9;
-    --link: #E67E22;
-    --link-hov: #F3DE8A;
+    --bg-nav: #1A5276;
+    --link: #3498DB;
+    --link-hov: #2980B9;
     --bg-box: #ECF0F1;
     --bg-line: #BDC3C7;
     --bg-foot: #2C3E50;
