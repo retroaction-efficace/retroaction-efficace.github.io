@@ -1,8 +1,6 @@
 body {
     background-color: var(--main);
     margin: 10px 40px;
-    padding: 0;
-    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
