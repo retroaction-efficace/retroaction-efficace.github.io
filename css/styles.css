@@ -58,7 +58,9 @@ header, footer {
     background-color: var(--dark);
     font-family: Optima, sans-serif;
     font-weight: 900;
-    display: inline-block;
+    display: flex;
+    align-text: center;
+    align-items: center;
     width: fit-content;
     height: 200px;
     padding: 25px;
