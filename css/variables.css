@@ -1,0 +1,13 @@
+:root {
+    --bg-body: #fbfaf5;
+    --bg-sec: #ffebcd;
+    --bg-head: #333;
+    --bg-nav: #444;
+    --link: black;
+    --link-hov: #e4e4e4;
+    --bg-box: #e4e4e4;
+    --bg-line: #333;
+    --bg-foot: #333;
+    --text-light: white;
+    --text-dark: #333333;
+}
