@@ -27,7 +27,7 @@ a:hover {
 }
 
 /* Header, Navigation and Footer */
-header, footer {
+header {
     width: 100%;
     background-color: var(--bg-head);
     color: var(--text-light);
