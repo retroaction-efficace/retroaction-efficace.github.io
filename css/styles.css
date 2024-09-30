@@ -40,6 +40,10 @@ header, nav, footer {
     box-sizing: border-box;
 }
 
+header a, nav a, footer a {
+    color: var(--text-light);
+}
+
 header {
     background-color: var(--bg-head);
     padding: 20px;
