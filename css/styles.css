@@ -42,6 +42,8 @@ button:hover {
 
 button.round {
     padding: 0;
+    width: 35px;
+    height: 35px;
 }
 
 footer {
