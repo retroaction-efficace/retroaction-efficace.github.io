@@ -59,6 +59,7 @@ section {
     background-color: var(--light);
     border: 1px solid var(--dark);
     border-radius: 15px;
+    display: flex;
     padding: 20px;
     margin: 40px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
