@@ -56,6 +56,11 @@ footer {
     align-items: center;
 }
 
+footer img {
+    display: block;
+    width:30px;
+    height: 30px;
+
 section {
     color: var(--dark);
     background-color: var(--light);
