@@ -65,7 +65,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
     
-section img {
+img {
     width: 100px;
     height: 100px;
     margin: 10px 40px;
