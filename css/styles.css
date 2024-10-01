@@ -204,7 +204,7 @@ th {
 }
 
 .correct {
-    color: var(--sec);
+    color: green;
     margin: 0 auto 20px;
 }
 
