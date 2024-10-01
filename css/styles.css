@@ -49,6 +49,10 @@ footer {
     align-items: center;
 }
 
+footer button {
+    padding: 0;
+}
+
 footer img {
     display: block;
     width:30px;
