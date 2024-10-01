@@ -40,13 +40,6 @@ button:hover {
     background-color: var(--sec);
 }
 
-header {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
 footer {
     width: 100%;
     padding: 20px;
@@ -71,7 +64,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
     
-img {
+section img {
     width: 100px;
     height: 100px;
     margin: 10px 40px;
