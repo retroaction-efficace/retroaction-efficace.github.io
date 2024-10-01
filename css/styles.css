@@ -15,7 +15,12 @@ p {
 }
 
 a {
+    color: var(--dark);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--acc);
 }
 
 button {
