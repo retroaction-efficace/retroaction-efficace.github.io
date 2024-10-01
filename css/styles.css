@@ -37,16 +37,10 @@ button:hover {
 }
 
 header {
-    color: var(--light);
-    background-color: var(--dark);
-    width: 100%;
-    padding: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
