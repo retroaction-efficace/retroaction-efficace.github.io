@@ -40,6 +40,10 @@ button:hover {
     background-color: var(--sec);
 }
 
+button.round {
+    padding: 0;
+}
+
 footer {
     width: 100%;
     padding: 20px;
