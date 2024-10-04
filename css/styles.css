@@ -20,10 +20,11 @@ button {
     background-color: var(--light);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 50%;
     padding: 20px;
     transition: color 0.3s ease;
 }
