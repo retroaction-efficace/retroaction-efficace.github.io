@@ -70,7 +70,8 @@ th {
     list-style-type: none;
     padding: 0;
     position: relative;
-    gap: 20px;
+    gap: 40px;
+    margin: 20px 0;
 }
 
 .box li {
