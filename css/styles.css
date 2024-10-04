@@ -40,10 +40,10 @@ button:hover {
     background-color: var(--sec);
 }
 
-button.round {
-    padding: 0;
-    width: 50px;
-    height: 50px;
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 40px;
 }
 
 footer {
@@ -55,12 +55,6 @@ footer {
     align-items: center;
 }
 
-footer img {
-    display: block;
-    width:30px;
-    height: 30px;
-}
-
 section {
     color: var(--dark);
     background-color: var(--light);
@@ -70,12 +64,6 @@ section {
     padding: 20px;
     margin: 40px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-    
-img {
-    width: 100px;
-    height: 100px;
-    margin: 10px 40px;
 }
 
 table {
