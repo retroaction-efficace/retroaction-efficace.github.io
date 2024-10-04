@@ -25,7 +25,8 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    padding: 20px;
+    width: 40px;
+    length: 40px;
     transition: color 0.3s ease;
 }
 
