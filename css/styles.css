@@ -62,36 +62,46 @@ th {
     background-color: var(--light);
 }
 
-.box {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.box li {
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  text-align: center;
 }
 
-.box li:nth-child(1) {
-    grid-column: 1 / span 12;
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding: 10px;
 }
 
-.box li:nth-child(2) {
-    grid-column: span 6;
+[class*="span-"] {
+  background-color: var(--light);
+  color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 20px;
 }
 
-.box li:nth-child(3) {
-    grid-column: span 4;
+.span-12 {
+  grid-column: span 12;
 }
 
-.box li:nth-child(4) {
-    grid-column: span 3;
+.span-6 {
+  grid-column: span 6;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-3 {
+  grid-column: span 3;
 }
 
 .draggable {
