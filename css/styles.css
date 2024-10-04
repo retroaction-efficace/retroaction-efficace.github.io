@@ -63,9 +63,10 @@ th {
 }
 
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+    gap: 20px;
     align-items: stretch;
 }
 
@@ -74,16 +75,15 @@ th {
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding: 20px;
-    flex: 1 1 calc(25% - 20px);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 200px;
-    max-width: calc(25% - 20px); 
+    min-width: 0;
+    max-width: 100%;
 }
 
 .box:only-child {
-    flex: 1 1 100%;
+    grid-column: 1 / -1;
 }
 
 .draggable {
