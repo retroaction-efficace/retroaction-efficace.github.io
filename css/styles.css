@@ -127,6 +127,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: fit-content;
     border-radius: 30px;
     padding: 20px;
     transition: color 0.3s ease;
