@@ -63,14 +63,11 @@ th {
 }
 
 .box {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 60px;
     list-style-type: none;
     padding: 0;
-    position: relative;
-    gap: 60px;
     margin: 30px 0;
 }
 
@@ -78,7 +75,6 @@ th {
     background-color: var(--light);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    flex: 1;
     padding: 20px;
     display: flex;
     align-items: center;
