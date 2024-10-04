@@ -82,6 +82,10 @@ th {
     max-width: calc(25% - 20px); 
 }
 
+.box:only-child {
+    flex: 1 1 100%;
+}
+
 .draggable {
     margin: 0 auto 20px;
     display: inline-block;
