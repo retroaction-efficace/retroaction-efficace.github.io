@@ -64,7 +64,7 @@ th {
 
 .box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
     width: 100%;
     gap: 60px;
     list-style-type: none;
