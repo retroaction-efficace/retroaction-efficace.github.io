@@ -63,9 +63,10 @@ th {
 }
 
 .box {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
     align-items: stretch;
 }
 
@@ -74,27 +75,12 @@ th {
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding: 20px;
+    flex: 1 1 calc(25% - 20px);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 0;
-    max-width: 100%;
-}
-
-.box li:nth-child(1) {
-    grid-column: 1 / span 12;
-}
-
-.box li:nth-child(2) {
-    grid-column: span 6;
-}
-
-.box li:nth-child(3) {
-    grid-column: span 4;
-}
-
-.box li:nth-child(4) {
-    grid-column: span 3;
+    min-width: 200px;
+    max-width: calc(25% - 20px); 
 }
 
 .draggable {
