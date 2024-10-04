@@ -1,7 +1,6 @@
 :root {
-    --main: #f7d569; /* Yellow */
-    --sec: #f7c25a; /* Orange */
+    --main: #f5f7f8; /* Grey */
+    --sec: #dbe4ee; /* Blue */
     --light: #ffffff; /* White */
     --dark: #0f111d; /* Black */
-    --grey: #ebebeb; /* Grey */
 }
