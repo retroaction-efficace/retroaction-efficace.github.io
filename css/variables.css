@@ -1,5 +1,6 @@
 :root {
-    --main: #f5f7f8; /* Grey */
+    --main: #f5f7f8; /* Light Grey */
+    --sec: #cacad4; /* Dark Grey */
     --light: #ffffff; /* White */
     --dark: #0f111d; /* Black */
 }
