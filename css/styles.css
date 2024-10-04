@@ -62,18 +62,6 @@ th {
     background-color: var(--light);
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.column {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .box {
     width: 100%;
     display: flex;
@@ -119,26 +107,24 @@ th {
     height: 50px;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .hidden {
     display: none;
 }
 
 .visible, .dropped {
     display: block;
-}
-
-.verify, .retry {
-    margin: 30px auto;
-    cursor: pointer;
-}
-
-.verify:hover, .retry:hover {
-    background-color: var(--sec);
-}
-
-.correct {
-    color: green;
-    margin: 0 auto 20px;
 }
 
 .no-drag {
