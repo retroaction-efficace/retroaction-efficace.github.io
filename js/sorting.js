@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const draggableContainer = document.getElementById('draggable');
     const paragraphs = draggableContainer.querySelectorAll('p');
-    const verifyButton = document.querySelector('button.verify');
-    const retryButton = document.querySelector('button.retry');
+    const verifyButton = document.querySelector('.verify');
+    const retryButton = document.querySelector('.retry');
     const excellentMessage = document.querySelector('.correct');
     const dropzones = document.querySelectorAll('.dropzone');
 
