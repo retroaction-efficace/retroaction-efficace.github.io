@@ -46,15 +46,6 @@ img {
     margin: 10px 40px;
 }
 
-section {
-    color: var(--dark);
-    background-color: var(--light);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
