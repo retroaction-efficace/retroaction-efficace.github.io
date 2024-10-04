@@ -70,6 +70,7 @@ th {
     list-style-type: none;
     padding: 0;
     position: relative;
+    gap: 20px;
 }
 
 .box li {
@@ -78,7 +79,6 @@ th {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     flex: 1 1 200px;
     padding: 20px;
-    margin: 20px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
