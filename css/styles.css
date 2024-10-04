@@ -84,6 +84,10 @@ th {
     justify-content: center;
 }
 
+.box li:only-child {
+    grid-column: 1 / -1;
+}
+
 .draggable {
     margin: 0 auto 20px;
     display: inline-block;
