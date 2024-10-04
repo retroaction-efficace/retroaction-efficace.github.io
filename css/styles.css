@@ -64,10 +64,8 @@ th {
 
 .box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    align-items: stretch;
 }
 
 .box li {
@@ -78,12 +76,22 @@ th {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 0;
-    max-width: 100%;
 }
 
-.box:only-child {
-    grid-column: 1 / -1;
+.box li:nth-child(1) {
+    grid-column: 1 / span 12;
+}
+
+.box li:nth-child(2) {
+    grid-column: span 6;
+}
+
+.box li:nth-child(3) {
+    grid-column: span 4;
+}
+
+.box li:nth-child(4) {
+    grid-column: span 3;
 }
 
 .draggable {
