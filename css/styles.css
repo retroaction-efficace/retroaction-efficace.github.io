@@ -76,8 +76,6 @@ th {
     background-color: var(--light);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    height: 100%;
-    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
