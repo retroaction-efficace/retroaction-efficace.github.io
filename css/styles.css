@@ -56,6 +56,13 @@ th {
     background-color: var(--light);
 }
 
+header, footer {
+  background-color: var(--main);
+  padding: 20px;
+  text-align: center;
+  grid-column: span 12;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
