@@ -57,10 +57,12 @@ th {
 }
 
 header, footer {
-  background-color: var(--main);
-  padding: 20px;
-  text-align: center;
-  grid-column: span 12;
+    background-color: var(--main);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 12;
 }
 
 main {
