@@ -46,15 +46,6 @@ img {
     margin: 10px 40px;
 }
 
-footer {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-
 section {
     color: var(--dark);
     background-color: var(--light);
