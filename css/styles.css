@@ -65,7 +65,8 @@ th {
 .box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: 30px;
+    align-items: stretch;
 }
 
 .box li {
@@ -76,6 +77,8 @@ th {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .box li:nth-child(1) {
