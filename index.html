@@ -70,23 +70,16 @@
         </div>
       </div>
       <footer>
-        <button class="transition" onclick="slide()">
+        <button class="transition" onclick="after()">
           ↓
         </button>
       </footer>
     </main>
-    <div class="overlay" id="after">
-        <iframe src="quoi.html">
+    <div class="overlay">
+        <iframe src="">
         </iframe>
     </div>
-    <script>
-      function slide() {
-        document.querySelector('.transition').style.display = 'none';
-        document.getElementById('after').classList.add('show');
-        setTimeout(() => {
-                window.location.href = 'quoi.html';
-            }, 500);
-      }
+    <script src="js/sliding.js">
     </script>
   </body>
 </html>
