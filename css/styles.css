@@ -210,7 +210,7 @@ input[type="radio"] {
     margin-right: 10px;
 }
 
-.verify, .retry {
+.submit, .retry {
     background-color: var(--main);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -224,7 +224,7 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.verify:hover, .retry:hover { 
+.submit:hover, .retry:hover { 
     background-color: var(--light);
 }
 
