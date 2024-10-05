@@ -190,10 +190,9 @@ main {
 }
 
 form {
-    background: var(--light);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    width: 100%;
 }
 
 .response {
@@ -201,7 +200,6 @@ form {
 }
 
 label {
-    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
