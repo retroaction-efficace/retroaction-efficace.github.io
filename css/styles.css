@@ -70,8 +70,8 @@ nav {
     transition: width 0.5s;
 }
 
-nav a {
-    padding: 50px 0;
+nav > * {
+    padding: 30px 0;
 }
 
 .menu-bars {
@@ -174,7 +174,6 @@ main {
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 10px;
 }
 
 .close::before,
