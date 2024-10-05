@@ -16,9 +16,15 @@ a {
     text-decoration: none;
 }
 
-img {
+img.big {
     width: 100px;
     height: 100px;
+    margin: 10px 40px;
+}
+
+img.small {
+    width: 50px;
+    height: 50px;
     margin: 10px 40px;
 }
 
