@@ -163,6 +163,7 @@ main {
 }
 .overlay.show-bottom {
     top: 0;
+    bottom: auto;
 }
 
 .row {
