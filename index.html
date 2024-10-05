@@ -76,13 +76,14 @@
       </footer>
     </main>
     <div class="overlay" id="after">
-        <iframe src="quoi.html" style="width:100%; height:100%; border:none;">
+        <iframe src="quoi.html">
         </iframe>
     </div>
     <script>
-        function slide() {
-            document.getElementById('after').classList.add('show');
-        }
+      function slide() {
+        document.querySelector('.transition').style.display = 'none';
+        document.getElementById('after').classList.add('show');
+      }
     </script>
   </body>
 </html>
