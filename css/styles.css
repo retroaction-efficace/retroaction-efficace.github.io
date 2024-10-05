@@ -213,7 +213,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: var(--dark);
+    background: var(--main);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -221,23 +221,13 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: var(--dark);
+    background: var(--main);
     cursor: pointer;
     border-radius: 50%;
 }
 
 input[type="range"]:hover {
     opacity: 1;
-}
-
-datalist option {
-    display: inline-block;
-    width: 25px;
-    height: 15px;
-    background: var(--light);
-    border-radius: 5px;
-    text-align: center;
-    line-height: 15px;
 }
 
 .submit, .retry {
