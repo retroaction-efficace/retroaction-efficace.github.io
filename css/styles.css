@@ -135,9 +135,6 @@ main {
     height: 75px;
     transition: color 0.3s ease;
     cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
     transform: translateX(-50%);
 }
 
