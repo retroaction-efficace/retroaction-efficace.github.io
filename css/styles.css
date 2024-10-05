@@ -44,6 +44,35 @@ th {
     background-color: var(--light);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1abc9c;
+}
+
+header img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+nav span {
+  display: block;
+  height: 3px;
+  background-color: var(--light);
+  border-radius: 3px;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
