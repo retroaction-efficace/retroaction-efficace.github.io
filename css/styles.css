@@ -22,12 +22,6 @@ img {
     margin: 10px 40px;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -208,12 +202,12 @@ main {
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    transition: color 0.3s ease;
+    transition: background 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .transition:hover { 
-    background-color: var(--main);
+    background-image: linear-gradient(to right, var(--module-1), var(--module-2), var(--module-3));
 }
 
 .row {
