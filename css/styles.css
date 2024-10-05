@@ -175,6 +175,7 @@ main {
     background: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 .close::before,
