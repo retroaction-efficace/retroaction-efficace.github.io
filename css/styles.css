@@ -64,7 +64,6 @@ nav {
     width: 0;
     top: 0;
     right: 0;
-    padding: 10px;
     position: fixed;
     overflow-x: hidden;
     transition: width 0.5s;
