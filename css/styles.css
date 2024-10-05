@@ -60,11 +60,14 @@ header img {
 nav {
     background-color: var(--light);
     color: var(--dark);
-    padding: 10px;
-    position: absolute;
-    top: 50px;
+    height: 100%;
+    width: 0;
+    top: 0;
     right: 0;
-    width: 200px;
+    padding: 10px;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .menu-bars {
