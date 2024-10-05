@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 responseDiv.querySelector('label').textContent = responseText;
                 responseDiv.querySelector('input[type="range"]').name = `p${index + 1}`;
                 form.appendChild(responseDiv);
-            });
+            })
+            .catch(error => console.error('Erreur lors du chargement du fichier response.html:', error));
     });
 });
