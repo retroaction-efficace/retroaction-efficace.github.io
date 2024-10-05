@@ -67,7 +67,7 @@ nav {
     padding: 10px;
     position: fixed;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s;
 }
 
 .menu-bars {
