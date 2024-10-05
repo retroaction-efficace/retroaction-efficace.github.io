@@ -202,7 +202,7 @@ main {
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    transition: background 0.3s ease-in-out;
+    transition: background 1s ease-in-out;
     cursor: pointer;
 }
 
