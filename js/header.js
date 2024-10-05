@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            document.querySelector('.nav').addEventListener('mouseleave', function() {
-                this.style.width = '0';
+            document.querySelector('.close').addEventListener('click', () => {
+                const nav = document.querySelector('.nav');
+                nav.style.width = '0';
                 document.querySelector('main').style.marginRight = '0';
             });
         });
