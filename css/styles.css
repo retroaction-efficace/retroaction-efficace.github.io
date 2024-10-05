@@ -48,12 +48,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 50px;
+    margin: 25px 50px 0;
 }
 
 header img {
     max-height: 50px;
     max-width: 50px;
+    margin: 0;
 }
 
 nav {
