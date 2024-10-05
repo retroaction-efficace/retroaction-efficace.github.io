@@ -1,39 +1,24 @@
-function after(url) {
-    console.log('after() called');
-    const button = document.querySelector('footer .transition');
-    button.style.display = 'none';
-    const overlay = document.querySelector('.overlay');
-    overlay.querySelector('iframe').src = url;
-    overlay.classList.remove('show-top');
-    // Force reflow to ensure the transition starts
-    void overlay.offsetWidth;
-    overlay.classList.add('show-bottom');
-    console.log('Classes updated:', overlay.classList);
-    overlay.addEventListener('transitionend', function handleTransitionEnd() {
-        console.log('Transition ended');
-        setTimeout(() => {
-            window.location.href = url;
-        }, 500); // Delay to match the transition duration
-        overlay.removeEventListener('transitionend', handleTransitionEnd);
-    });
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('content');
 
-function before(url) {
-    console.log('before() called');
-    const button = document.querySelector('header .transition');
-    button.style.display = 'none';
-    const overlay = document.querySelector('.overlay');
-    overlay.querySelector('iframe').src = url;
-    overlay.classList.remove('show-bottom');
-    // Force reflow to ensure the transition starts
-    void overlay.offsetWidth;
-    overlay.classList.add('show-top');
-    console.log('Classes updated:', overlay.classList);
-    overlay.addEventListener('transitionend', function handleTransitionEnd() {
-        console.log('Transition ended');
+    function loadPage(url, direction = 'top') {
+        content.classList.add(`hidden-${direction}`);
         setTimeout(() => {
-            window.location.href = url;
-        }, 500); // Delay to match the transition duration
-        overlay.removeEventListener('transitionend', handleTransitionEnd);
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    content.innerHTML = html;
+                    content.className = '';
+                });
+        }, 500);
+    }
+
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const url = link.getAttribute('href');
+            const direction = link.dataset.direction || 'top';
+            loadPage(url, direction);
+        });
     });
-}
+});
