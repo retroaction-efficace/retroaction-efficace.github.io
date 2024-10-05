@@ -77,7 +77,24 @@ nav {
 }
 
 nav a {
-    padding: 30px 0;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--main);
+}
+
+nav a[href="module-1.html"]:hover {
+    background-color: var(--module-1);
+}
+
+nav a[href="module-2.html"]:hover {
+    background-color: var(--module-2);
+}
+
+nav a[href="module-3.html"]:hover {
+    background-color: var(--module-3);
 }
 
 .menu-bars {
