@@ -192,7 +192,7 @@ main {
 form {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 15px;
+    gap: 5%;
     align-items: center;
 }
 
