@@ -71,13 +71,19 @@
         </div>
       </div>
       <footer>
-        <a href="quoi.html">
-          <button class="transition" data-direction="up">
-            ↓
-          </button>
-        </a>
+        <button class="transition" onclick="slide()">
+          ↓
+        </button>
       </footer>
     </main>
-    <script src="js/sliding.js"></script>
+    <div class="overlay" id="after">
+        <iframe src="quoi.html" style="width:100%; height:100%; border:none;">
+        </iframe>
+    </div>
+    <script>
+        function slide() {
+            document.getElementById('after').classList.add('show');
+        }
+    </script>
   </body>
 </html>
