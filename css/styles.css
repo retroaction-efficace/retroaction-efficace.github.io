@@ -154,10 +154,12 @@ main {
 }
 
 .overlay.up {
+    display: block;
     transform: translateY(-100%);
 }
 
 .overlay.down {
+    display: block;
     transform: translateY(0);
 }
 
