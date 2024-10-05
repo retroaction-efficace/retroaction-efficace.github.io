@@ -70,6 +70,10 @@ nav {
     transition: width 0.5s;
 }
 
+nav a {
+    padding: 50px 0;
+}
+
 .menu-bars {
     width: 30px;
     height: 20px;
