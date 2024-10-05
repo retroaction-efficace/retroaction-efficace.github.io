@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const content = document.querySelector('main');
+ddocument.addEventListener('DOMContentLoaded', () => {
+    const content = document.body;
 
     function loadPage(url, direction = 'top') {
         content.classList.add(direction);
