@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const draggableContainer = document.getElementById('draggable');
     const paragraphs = draggableContainer.querySelectorAll('p');
-    const verifyButton = document.querySelector('.verify');
+    const submitButton = document.querySelector('.submit');
     const retryButton = document.querySelector('.retry');
     const excellentMessage = document.querySelector('.correct');
     const dropzones = document.querySelectorAll('.dropzone');
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function checkAllPlaced() {
         const allPlaced = Array.from(paragraphs).every(p => p.classList.contains('dropped'));
-        verifyButton.classList.toggle('visible', allPlaced);
-        verifyButton.classList.toggle('hidden', !allPlaced);
+        submitButton.classList.toggle('visible', allPlaced);
+        submitButton.classList.toggle('hidden', !allPlaced);
     }
 
     function attachDragStartEvent(element) {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    verifyButton.addEventListener('click', function() {
+    submitButton.addEventListener('click', function() {
         let allCorrect = true;
         dropzones.forEach((zone, index) => {
             Array.from(zone.children).forEach(child => {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-        verifyButton.classList.replace('visible', 'hidden');
+        submitButton.classList.replace('visible', 'hidden');
         if (allCorrect) {
             excellentMessage.classList.replace('hidden', 'visible');
             paragraphs.forEach(p => {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         draggableContainer.style.display = '';
-        verifyButton.classList.replace('visible', 'hidden');
+        submitButton.classList.replace('visible', 'hidden');
         retryButton.classList.replace('visible', 'hidden');
         excellentMessage.classList.replace('visible', 'hidden');
         updateVisibility();
