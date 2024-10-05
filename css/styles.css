@@ -197,6 +197,10 @@ form {
     align-items: center;
 }
 
+label {
+    white-space: nowrap;
+}
+
 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
