@@ -72,9 +72,10 @@ nav {
     position: fixed;
     overflow-x: hidden;
     transition: width 0.5s;
+    padding: 25% 0;
 }
 
-nav > * {
+nav a {
     padding: 30px 0;
 }
 
