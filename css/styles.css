@@ -49,7 +49,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #1abc9c;
+  background-color: var(--light);
 }
 
 header img {
