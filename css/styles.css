@@ -190,8 +190,8 @@ main {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
@@ -237,6 +237,16 @@ input[type="range"]::-moz-range-thumb {
 
 input[type="range"]:hover {
     opacity: 1;
+}
+
+datalist option {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    background: var(--dark);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 15px;
 }
 
 .submit, .retry {
