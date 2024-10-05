@@ -60,6 +60,7 @@ header img {
 nav {
     background-color: var(--light);
     color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     height: 100%;
     width: 0;
     top: 0;
@@ -190,6 +191,7 @@ main {
 .column {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
