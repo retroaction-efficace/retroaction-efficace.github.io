@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('ranking');
+    const form = document.querySelector('.ranking');
     const responses = [
         "Fournir des pistes d'amélioration",
         "Récompenser",
