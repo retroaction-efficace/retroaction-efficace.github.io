@@ -162,8 +162,8 @@ main {
     top: 0;
 }
 .overlay.show-bottom {
-    top: 0;
-    bottom: auto;
+    bottom: 0;
+    top: auto;
 }
 
 .row {
