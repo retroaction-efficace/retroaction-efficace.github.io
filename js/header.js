@@ -16,19 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            document.querySelector('.close').addEventListener('click', () => {
+            document.querySelector('.nav').addEventListener('mouseleave', () => {
                 const nav = document.querySelector('.nav');
                 nav.style.width = '0';
                 document.querySelector('main').style.marginRight = '0';
             });
 
             const currentPage = window.location.pathname.split('/').pop();
-            const darkLogoPages = ['module-1.html', 'module-2.html', 'module-3.html'];
+            const lightLogoPages = ['module-1.html', 'module-2.html', 'module-3.html'];
             const colorLogo = document.getElementById('color');
-            const darkLogo = document.getElementById('dark');
+            const lightLogo = document.getElementById('light');
 
-            if (darkLogoPages.includes(currentPage)) {
-                darkLogo.classList.add('visible');
+            if (lightLogoPages.includes(currentPage)) {
+                lightLogo.classList.add('visible');
             } else {
                 colorLogo.classList.add('visible');
             }
