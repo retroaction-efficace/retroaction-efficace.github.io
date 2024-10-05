@@ -193,13 +193,13 @@ form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 15px;
-    align-items: center; 
+    align-items: center;
 }
 
 label {
     grid-column: 1;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 input[type="range"] {
@@ -240,7 +240,7 @@ datalist option {
     display: inline-block;
     width: 25px;
     height: 15px;
-    background: var(--dark);
+    background: var(--light);
     border-radius: 5px;
     text-align: center;
     line-height: 15px;
