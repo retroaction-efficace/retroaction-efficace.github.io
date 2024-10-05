@@ -73,6 +73,7 @@ nav {
     overflow-x: hidden;
     transition: width 0.5s;
     padding: 10% 0;
+    box-sizing: border-box;
 }
 
 nav a {
