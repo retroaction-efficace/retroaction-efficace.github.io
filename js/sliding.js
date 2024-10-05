@@ -4,9 +4,9 @@ function after(url) {
     overlay.querySelector('iframe').src = url;
     overlay.classList.remove('show-top');
     overlay.classList.add('show-bottom');
-    setTimeout(() => {
+    overlay.addEventListener('transitionend', function() {
         window.location.href = url;
-    }, 500);
+    }, { once: true });
 }
 
 function before(url) {
@@ -15,7 +15,7 @@ function before(url) {
     overlay.querySelector('iframe').src = url;
     overlay.classList.remove('show-bottom');
     overlay.classList.add('show-top');
-    setTimeout(() => {
+    overlay.addEventListener('transitionend', function() {
         window.location.href = url;
-    }, 500); 
+    }, { once: true });
 }
