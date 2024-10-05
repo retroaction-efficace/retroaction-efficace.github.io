@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('JavaScript loaded');
+    console.log('JavaScript loaded'); 
 
     const overlay = document.querySelector('.overlay');
     const transitionButtons = document.querySelectorAll('.transition');
@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Button clicked');
 
             const direction = e.target.getAttribute('data-direction');
+            const targetUrl = e.target.closest('a').href;
             console.log('Direction:', direction);
+            console.log('Target URL:', targetUrl); 
 
-            overlay.classList.remove('up', 'down');
+            overlay.classList.remove('up', 'down'); 
 
             if (direction === 'up') {
                 overlay.classList.add('up');
@@ -21,9 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             setTimeout(() => {
-                console.log(`Navigating to the next page with ${direction} slide`);
-                overlay.classList.remove('up', 'down');
-            }, 500); // Match this duration with the CSS transition duration
+                window.location.href = targetUrl; 
+            }, 500);
         });
     });
 });
