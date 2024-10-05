@@ -168,6 +168,36 @@ main {
     background-color: var(--light);
 }
 
+.close {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.close::before,
+.close::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--dark);
+    border-radius: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.close::before {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.close::after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
 .transition {
     background-color: var(--light);
     color: var(--dark);
