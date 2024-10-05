@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     responses.forEach((responseText, index) => {
-        fetch('ranking.html')
+        fetch('components/ranking.html')
             .then(response => response.text())
             .then(html => {
                 const tempDiv = document.createElement('div');
