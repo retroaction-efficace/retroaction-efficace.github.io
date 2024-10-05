@@ -194,7 +194,7 @@ form {
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     width: 33%;
-    padding: 5%;
+    padding: 30px;
     align-items: center;
 }
 
