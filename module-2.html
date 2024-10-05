@@ -31,73 +31,31 @@
         <p>
           La variabilité de l'efficacité de la rétroaction porte à réfléchir. À partir de vos pratiques et à vos représentations, prenez le temps d’examiner les différentes formes de rétroaction et identifiez celles qui vous semblent les plus efficaces. Pour finaliser cette activité, il suffit d'utiliser le curseur pour positionner chaque rétroaction de la plus efficace à la moins efficace.
         </p>
-        <div class="draggable", id="draggable">
-          <p id="p1" draggable="true">
-            Fournir des pistes d'amélioration
-          </p>
-          <p id="p2" draggable="true">
-            Récompenser
-          </p>
-          <p id="p3" draggable="true">
-            Fournir la bonne réponse
-          </p>
-          <p id="p4" draggable="true">
-            Punir
-          </p>
-          <p id="p5" draggable="true">
-            Identifier les erreurs
-          </p>
-          <p id="p6" draggable="true">
-            Attribuer une note chiffrée
-          </p>
-          <p id="p7" draggable="true">
-            Remplir une grille critériée
-          </p>
-          <p id="p8" draggable="true">
-            Complimenter l'apprenant
-          </p>
+        <form id="ranking">
+        <div class="response" id="p1">
+            <label>Fournir des pistes d'amélioration</label>
         </div>
-        <p class="verify hidden">
-          Vérifier
-        </p>
-        <p class="retry hidden">
-          Réessayer
-        </p>
-        <p class="correct hidden">
-          Excellent ! Toutes ces réponses sont correctes.
-        </p>
-        <table class="sorting">
-          <thead>
-            <tr>
-              <th>
-                Aucune efficacité
-              </th>
-              <th>
-                Efficacité faible
-              </th>
-              <th>
-                Efficacité moyenne
-              </th>
-              <th>
-                Efficacité élevée
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="dropzone">
-              </td>
-              <td class="dropzone">
-              </td>
-              <td class="dropzone">
-              </td>
-              <td class="dropzone">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
+        <div class="response" id="p2">
+            <label>Récompenser</label>
+        </div>
+        <div class="response" id="p3">
+            <label>Fournir la bonne réponse</label>
+        </div>
+        <div class="response" id="p4">
+            <label>Punir</label>
+        </div>
+        <div class="response" id="p5">
+            <label>Identifier les erreurs</label>
+        </div>
+        <div class="response" id="p6">
+            <label>Attribuer une note chiffrée</label>
+        </div>
+        <div class="response" id="p7">
+            <label>Remplir une grille critériée</label>
+        </div>
+        <div class="response" id="p8">
+            <label>Complimenter l'apprenant</label>
+        </div>
       <div class="span-12">
         <a class="transition" href="module-3.html">
           ↓
@@ -106,7 +64,7 @@
     </main>
     <script src="js/header.js">
     </script>
-    <script src="js/sorting.js">
+    <script src="js/ranking.js">
     </script>
   </body>
 </html>
