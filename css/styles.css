@@ -158,7 +158,10 @@ main {
     transition: top 0.5s ease;
 }
 
-.overlay.show {
+.overlay.show-top {
+    top: 0;
+}
+.overlay.show-bottom {
     top: 0;
 }
 
