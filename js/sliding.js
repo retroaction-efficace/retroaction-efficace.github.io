@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Button clicked');
 
             const direction = e.target.getAttribute('data-direction');
-            console.log('Direction:', direction); // Check the direction value
+            console.log('Direction:', direction);
 
             overlay.classList.remove('up', 'down');
 
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             setTimeout(() => {
-                // Replace with the actual navigation logic
                 console.log(`Navigating to the next page with ${direction} slide`);
                 overlay.classList.remove('up', 'down');
             }, 500); // Match this duration with the CSS transition duration
