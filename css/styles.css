@@ -202,12 +202,12 @@ main {
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    transition: background 5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .transition:hover { 
-    background-image: linear-gradient(to right, var(--module-1), var(--module-2), var(--module-3));
+    transform: scale(1.1);
 }
 
 .row {
