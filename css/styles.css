@@ -189,6 +189,27 @@ main {
     height: 50px;
 }
 
+form {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
 .verify, .retry {
     background-color: var(--main);
     color: var(--dark);
