@@ -58,7 +58,6 @@ main {
     grid-template-columns: repeat(12, 1fr);
     gap: 50px;
     padding: 50px;
-    transition: transform 0.5s ease;
 }
 
 [class*="span-"] {
@@ -146,13 +145,6 @@ main {
 
 .transition:hover { 
     background-color: var(--main);
-}
-
-.top {
-    transform: translateY(-100%);
-}
-.bottom {
-    transform: translateY(100%);
 }
 
 .row {
