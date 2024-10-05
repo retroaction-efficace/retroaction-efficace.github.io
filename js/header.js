@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             document.querySelector('header').innerHTML = data;
 
-            // Add event listeners after loading the header
             document.querySelector('.menu').addEventListener('click', () => {
                 const nav = document.querySelector('.nav');
                 if (nav.style.width === '250px') {
