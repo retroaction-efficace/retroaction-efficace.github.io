@@ -50,6 +50,11 @@ header {
     max-width: 50px;
     margin: 0;
     display: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 nav {
@@ -104,6 +109,11 @@ nav a[href="module-3.html"]:hover {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-bars {
+    transform: scale(1.1);
 }
 
 .menu-bars span {
