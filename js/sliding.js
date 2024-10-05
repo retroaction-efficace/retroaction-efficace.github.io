@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const content = document.getElementById('content');
+    const content = document.querySelector('main');
 
     function loadPage(url, direction = 'top') {
         content.classList.add(direction);
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     }
 
-    document.querySelectorAll('a').forEach(link => {
+    document.querySelectorAll('a.transition').forEach(link => {
         link.addEventListener('click', event => {
             event.preventDefault();
             const url = link.getAttribute('href');
