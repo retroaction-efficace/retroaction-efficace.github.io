@@ -171,6 +171,7 @@ main {
 .close {
     width: 30px;
     height: 30px;
+    flex-shrink: 0;
     background: transparent;
     border: none;
     cursor: pointer;
