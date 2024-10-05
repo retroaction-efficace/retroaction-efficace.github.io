@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             const currentPage = window.location.pathname.split('/').pop();
-            const lightLogoPages = ['module-1.html', 'module-2.html', 'module-3.html'];
+            const darkLogoPages = ['module-1.html', 'module-2.html', 'module-3.html'];
             const colorLogo = document.getElementById('color');
-            const lightLogo = document.getElementById('light');
+            const darkLogo = document.getElementById('dark');
 
-            if (lightLogoPages.includes(currentPage)) {
-                lightLogo.classList.add('visible');
+            if (darkLogoPages.includes(currentPage)) {
+                darkLogo.classList.add('visible');
             } else {
                 colorLogo.classList.add('visible');
             }
