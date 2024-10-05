@@ -44,15 +44,6 @@ th {
     background-color: var(--light);
 }
 
-header, footer {
-    background-color: var(--main);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: span 12;
-}
-
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -60,10 +51,13 @@ main {
     padding: 50px;
 }
 
-[class*="span-"] {
+content {
     background-color: var(--light);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+[class*="span-"] {
     padding: 20px;
     display: flex;
     justify-content: center;
