@@ -112,7 +112,7 @@ nav a[href="module-3.html"]:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.menu-bars {
+.menu-bars:hover {
     transform: scale(1.1);
 }
 
