@@ -77,11 +77,12 @@ nav {
 }
 
 nav a {
-    padding: 15px 0;
+    padding: 25px 0;
     transition: background-color 0.3s ease;
     width: 100%;
     display: block;
     text-align: center;
+    box-sizing: border-box;
 }
 
 nav a:hover {
