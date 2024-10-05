@@ -45,10 +45,10 @@ th {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
 }
 
 header img {
