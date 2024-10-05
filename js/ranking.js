@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
-    const form = document.querySelector('.ranking'); // Select the form using the class
+    const form = document.querySelector('.ranking');
     const responses = [
         "Fournir des pistes d'amélioration",
         "Récompenser",
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html.trim();
                 console.log('tempDiv:', tempDiv);
-                const responseDiv = tempDiv.firstElementChild; // Use firstElementChild instead of firstChild
+                const responseDiv = tempDiv.firstElementChild;
                 console.log('responseDiv:', responseDiv);
                 if (responseDiv) {
                     responseDiv.querySelector('label').textContent = responseText;
