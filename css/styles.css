@@ -48,8 +48,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: var(--light);
+  padding: 20 50px;
 }
 
 header img {
@@ -63,7 +62,7 @@ nav {
     padding: 10px;
     position: absolute;
     top: 50px;
-    left: 0;
+    right: 0;
     width: 200px;
 }
 
