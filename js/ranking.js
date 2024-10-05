@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Efficacité forte"
     ];
 
-    const form = document.getElementById('ranking');
+    const form = document.querySelector('.ranking');
     const responses = form.querySelectorAll('.response');
 
     responses.forEach(response => {
