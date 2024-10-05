@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
 
     function loadPage(url, direction = 'top') {
-        content.classList.add(`hidden-${direction}`);
+        content.classList.add(direction);
         setTimeout(() => {
             fetch(url)
                 .then(response => response.text())
