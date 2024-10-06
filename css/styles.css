@@ -82,8 +82,7 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 50px;
-    padding: 50px;
-    margin: 0 50px;
+    padding: 50px 100px;
     
 }
 
