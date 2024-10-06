@@ -147,7 +147,6 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 30px;
     align-items: center;
 }
 
@@ -322,13 +321,13 @@ input[type="range"]:hover {
 }
 
 .low-to-none {
-    background: linear-gradient(to bottom, var(--weak), var(--none));
+    background: linear-gradient(to bottom, rgba(237, 180, 145, 0.5), rgba(231, 149, 127, 0.5));
 }
 
 .moderate-to-low {
-    background: linear-gradient(to bottom, var(--moderate), var(--weak));
+    background: linear-gradient(to bottom, rgba(244, 213, 163, 0.5), rgba(237, 180, 145, 0.5));
 }
 
 .high-to-moderate {
-    background: linear-gradient(to bottom, var(--high), var(--moderate));
+    background: linear-gradient(to bottom, rgba(153, 192, 173, 0.5), rgba(244, 213, 163, 0.5));
 }
