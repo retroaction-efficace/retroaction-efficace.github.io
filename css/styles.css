@@ -244,7 +244,7 @@ input[type="range"]:hover {
 }
 
 .submit, .retry {
-    background-color: var(--main);
+    background-color: var(--light);
     color: var(--dark);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     display: flex;
@@ -253,12 +253,12 @@ input[type="range"]:hover {
     width: fit-content;
     border-radius: 30px;
     padding: 20px;
-    transition: color 0.3s ease;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .submit:hover, .retry:hover { 
-    background-color: var(--light);
+    transform: scale(1.1);
 }
 
 .transition {
