@@ -307,13 +307,13 @@ td {
 }
 
 .low {
-    color-background: var(--low);
+    background-color: var(--low);
 }
 
 .moderate {
-    color-background: var(--moderate);
+    background-color: var(--moderate);
 }
 
 .high {
-    color-background: var(--high);
+    background-color: var(--high);
 }
