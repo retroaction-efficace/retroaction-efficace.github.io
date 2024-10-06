@@ -62,7 +62,7 @@ nav a[href="module-3.html"]:hover {
     background-color: var(--module-3);
 }
 
-.menu-bars {
+.menu {
     width: 30px;
     height: 20px;
     display: flex;
@@ -72,7 +72,7 @@ nav a[href="module-3.html"]:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.menu-bars span {
+.menu span {
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -134,7 +134,6 @@ main {
 #draggable p {
     border: 1px solid var(--dark);
     padding: 25px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .dropzone {
@@ -178,34 +177,6 @@ input[type="range"]:hover {
     opacity: 1;
 }
 
-.submit, .retry {
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    border-radius: 30px;
-    padding: 20px;
-    cursor: pointer;
-}
-
-
-.transition {
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-}
-
 /* General Styles */
 
 p {
@@ -221,8 +192,22 @@ a {
 }
 
 button {
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border: none;
+    border-radius: 30px;
     font-size: 16px;
+    width: fit-content;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.transition {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
 }
 
 img.big {
