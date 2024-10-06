@@ -129,7 +129,7 @@ main {
 
 /* Interactivity Tools */
 
-#draggable p {
+.draggable p {
     border: 1px solid var(--dark);
     padding: 25px;
 }
