@@ -91,6 +91,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding: 30px;
     align-items: center;
 }
 
@@ -175,6 +176,21 @@ input[type="range"]::-moz-range-thumb {
 
 input[type="range"]:hover {
     opacity: 1;
+}
+
+.low {
+    background-color: var(--low);
+    padding: 5px;
+}
+
+.moderate {
+    background-color: var(--moderate);
+    padding: 5px;
+}
+
+.high {
+    background-color: var(--high);
+    padding: 5px;
 }
 
 /* General Styles */
@@ -324,16 +340,4 @@ td {
 
 .module-3 {
     background-color: var(--module-3);
-}
-
-.low {
-    background-color: var(--low);
-}
-
-.moderate {
-    background-color: var(--moderate);
-}
-
-.high {
-    background-color: var(--high);
 }
