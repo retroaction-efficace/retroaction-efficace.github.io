@@ -216,7 +216,7 @@ input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
     height: 15px;
-    background: linear-gradient(to right, var(--none), var(--weak), var(--moderate), var(--high));
+    background: linear-gradient(to right, var(--none), var(--moderate), var(--high));
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
