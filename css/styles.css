@@ -196,12 +196,15 @@ button {
     border: none;
     border-radius: 30px;
     font-size: 16px;
-    width: fit-content;
     padding: 20px;
     cursor: pointer;
 }
 
 .transition {
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border: none;
     border-radius: 50%;
     width: 75px;
     height: 75px;
