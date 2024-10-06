@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 img.big {
     width: 100px;
     height: 100px;
