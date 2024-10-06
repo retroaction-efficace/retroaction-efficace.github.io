@@ -136,6 +136,14 @@ main {
     padding: 50px;
 }
 
+.duo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+}
+
 .box {
     background-color: var(--light);
     color: var(--dark);
@@ -191,14 +199,6 @@ main {
 .dropzone {
     border: 1px dashed var(--dark);
     height: 50px;
-}
-
-.duo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 30px;
-    align-items: center;
 }
 
 label {
