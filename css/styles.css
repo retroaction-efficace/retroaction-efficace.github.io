@@ -198,7 +198,6 @@ h4, h5, h6 {
     color: var(--dark);
     font-family: Verdana, sans-serif;
     font-weight: bold;
-    letter-spacing: 0.5px;
     margin: 1em 0;
 }
     
