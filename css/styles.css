@@ -216,13 +216,13 @@ button {
 img.big {
     width: 100px;
     height: 100px;
-    margin: 10px 40px;
+    margin: 10px 20px;
 }
 
 img.medium {
-    width: 75px;
-    height: 75px;
-    margin: 5px 20px;
+    width: 70px;
+    height: 70px;
+    margin: 5px 10px;
 }
 
 img.small {
