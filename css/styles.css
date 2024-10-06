@@ -323,12 +323,15 @@ input[type="range"]:hover {
 
 .low-to-none {
     background: linear-gradient(to bottom, rgba(222, 150, 126, 0.7), rgba(222, 150, 126, 0.3));
+    padding: 0;
 }
 
 .moderate-to-low {
     background: linear-gradient(to bottom, rgba(244, 213, 163, 0.7), rgba(222, 150, 126, 0.3));
+    padding: 0;
 }
 
 .high-to-moderate {
     background: linear-gradient(to bottom, rgba(153, 192, 173, 0.7), rgba(244, 213, 163, 0.3));
+    padding: 0;
 }
