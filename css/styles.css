@@ -274,7 +274,7 @@ td {
 .row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
 }
