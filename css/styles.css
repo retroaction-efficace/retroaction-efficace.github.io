@@ -165,6 +165,10 @@ main {
   grid-column: span 3;
 }
 
+.span-1 {
+  grid-column: span 1;
+}
+
 .draggable {
     margin: 0 auto 20px;
     display: flex;
