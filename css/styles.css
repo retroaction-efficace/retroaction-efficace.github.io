@@ -15,8 +15,9 @@ header {
 }
 
 .landing {
-    width: 100%;
-    length: 100%;
+    width: 100vh;
+    length: 90vh;
+    font-size: 1.6em;
 }
 
 nav {
