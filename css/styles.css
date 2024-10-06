@@ -1,3 +1,5 @@
+/* Components Style */
+
 body {
     background-color: var(--main);
     margin: 0;
@@ -6,66 +8,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-p {
-    text-align: justify;
-    line-height: 1.6;
-}
-
-a {
-    color: var(--dark);
-    text-decoration: none;
-}
-
-button {
-    border: none;
-    font-size: 16px;
-}
-
-img.big {
-    width: 100px;
-    height: 100px;
-    margin: 10px 40px;
-}
-
-img.small {
-    width: 75px;
-    height: 75px;
-    margin: 10px 40px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-th, td {
-    border: 1px solid var(--dark);
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: var(--light);
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 25px 50px 0;
-}
-
-.logo {
-    max-height: 50px;
-    max-width: 50px;
-    margin: 0;
-    display: none;
-    transition: transform 0.3s ease-in-out;
-}
-
-.logo:hover {
-    transform: scale(1.1);
 }
 
 nav {
@@ -125,16 +72,14 @@ nav a[href="module-3.html"]:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.menu-bars:hover {
-    transform: scale(1.1);
-}
-
 .menu-bars span {
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: var(--dark);
 }
+
+/* Grid Layout */
 
 main {
     display: grid;
@@ -149,12 +94,6 @@ main {
     gap: 30px;
     padding: 30px;
     align-items: center;
-}
-
-.box {
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 [class*="span-"] {
@@ -184,27 +123,21 @@ main {
   grid-column: span 1;
 }
 
-.draggable {
-    margin: 0 auto 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-}
-
-.draggable p {
-    border: 1px solid var(--dark);
-    background-color: var(--main);
-    padding: 25px;
-    transition: background-color 0.3s;
-}
-
-.draggable p:hover {
+.box {
     background-color: var(--light);
+    color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+/* Interactivity Tools */
+
+#draggable p {
+    border: 1px solid var(--dark);
+    padding: 25px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .dropzone {
-    border: 1px dashed var(--dark);
     height: 50px;
 }
 
@@ -256,12 +189,8 @@ input[type="range"]:hover {
     border-radius: 30px;
     padding: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
 }
 
-.submit:hover, .retry:hover { 
-    transform: scale(1.1);
-}
 
 .transition {
     background-color: var(--light);
@@ -274,13 +203,71 @@ input[type="range"]:hover {
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.transition:hover { 
-    transform: scale(1.1);
+/* General Styles */
+
+p {
+    color: var(--dark);
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.6;
 }
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+}
+
+img.big {
+    width: 100px;
+    height: 100px;
+    margin: 10px 40px;
+}
+
+img.medium {
+    width: 75px;
+    height: 75px;
+    margin: 5px 20px;
+}
+
+img.small {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+}
+
+.logo {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    border: 1px dashed var(--dark);
+    border-bottom: none;
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    border: 1px dashed var(--dark);
+    border-top: none;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Generic Properties */
 
 .row {
     display: flex;
@@ -297,6 +284,14 @@ input[type="range"]:hover {
     flex-direction: column;
 }
 
+.interactive {
+    transition: transform 0.3s ease-in-out;
+}
+
+.interactive:hover {
+    transform: scale(1.1);
+}
+
 .hidden {
     display: none;
 }
@@ -308,6 +303,8 @@ input[type="range"]:hover {
 .no-drag {
     cursor: default;
 }
+
+/* Background Colors */
 
 .module-1 {
     background-color: var(--module-1);
@@ -321,17 +318,14 @@ input[type="range"]:hover {
     background-color: var(--module-3);
 }
 
-.low-to-none {
-    background: linear-gradient(to bottom, rgba(222, 150, 126, 0.7), rgba(222, 150, 126, 0.3));
-    padding: 0;
+.low {
+    color-background: var(--low);
 }
 
-.moderate-to-low {
-    background: linear-gradient(to bottom, rgba(244, 213, 163, 0.7), rgba(222, 150, 126, 0.3));
-    padding: 0;
+.moderate {
+    color-background: var(--moderate);
 }
 
-.high-to-moderate {
-    background: linear-gradient(to bottom, rgba(153, 192, 173, 0.7), rgba(244, 213, 163, 0.3));
-    padding: 0;
+.high {
+    color-background: var(--high);
 }
