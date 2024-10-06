@@ -192,13 +192,17 @@ p {
     letter-spacing: 0.5px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     color: var(--dark);
     font-family: Georgia, serif;
     font-weight: bold;
     line-height: 1.2;
     letter-spacing: 0.5px;
     margin: 1em 0;
+}
+
+h1 {
+    color: var(--moderate);
 }
 
 a {
@@ -312,7 +316,7 @@ td {
     cursor: default;
 }
 
-/* Background Colors */
+/* Additional Colors */
 
 .module-1 {
     background-color: var(--module-1);
