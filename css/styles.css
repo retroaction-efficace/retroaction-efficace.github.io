@@ -102,23 +102,28 @@ main {
 }
 
 .span-12 {
-  grid-column: span 12;
+    grid-column: span 12;
+    font-size: 16px;
 }
 
 .span-6 {
-  grid-column: span 6;
+    grid-column: span 6;
+    font-size: 16px;
 }
 
 .span-4 {
-  grid-column: span 4;
+    grid-column: span 4;
+    font-size: 14px;
 }
 
 .span-3 {
-  grid-column: span 3;
+    grid-column: span 3;
+    font-size: 14px;
 }
 
 .span-1 {
-  grid-column: span 1;
+    grid-column: span 1;
+    font-size: 12px;
 }
 
 .box {
