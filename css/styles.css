@@ -89,6 +89,7 @@ nav {
 
 nav a {
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
     width: 100%;
     margin: 0;
     padding: 25px 0;
@@ -99,6 +100,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--main);
+    transform: scale(1.1);
 }
 
 nav a[href="module-1.html"]:hover {
