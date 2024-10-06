@@ -320,3 +320,15 @@ input[type="range"]:hover {
 .module-3 {
     background-color: var(--module-3);
 }
+
+.low-to-none {
+    background: linear-gradient(to bottom, var(--weak), var(--none));
+}
+
+.moderate-to-low {
+    background: linear-gradient(to bottom, var(--moderate), var(--weak));
+}
+
+.high-to-moderate {
+    background: linear-gradient(to bottom, var(--high), var(--moderate));
+}
