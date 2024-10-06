@@ -197,8 +197,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
-    width: 33%;
-    padding: 30px;
     align-items: center;
 }
 
