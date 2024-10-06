@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const submitButton = document.querySelector('.submit');
-    const hiddenDiv = document.querySelector('.duo.hidden');
+    const hiddenDiv = document.querySelector('.hidden');
 
     submitButton.addEventListener('click', function() {
         submitButton.style.display = 'none';
