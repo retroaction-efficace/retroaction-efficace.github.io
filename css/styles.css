@@ -279,6 +279,7 @@ input[type="range"]:hover {
 .row {
     display: flex;
     align-items: center;
+    justify-centent: space-between;
     flex-direction: row;
 }
 
