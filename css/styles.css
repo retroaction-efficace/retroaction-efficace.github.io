@@ -348,7 +348,7 @@ td {
     cursor: default;
 }
 
-no-padding {
+.no-padding {
     padding: 0;
 }
 
