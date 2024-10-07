@@ -1,8 +1,10 @@
+// header.js
 document.addEventListener('DOMContentLoaded', function() {
     fetch('components/header.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('header').innerHTML = data;
+            document.querySelector('.title').textContent = document.title;
 
             document.querySelector('.menu').addEventListener('click', () => {
                 const nav = document.querySelector('.nav');
