@@ -61,8 +61,8 @@ nav a[href="module-3.html"]:hover {
 }
 
 .menu {
-    width: 30px;
-    height: 20px;
+    width: 2%;
+    height: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,7 +72,7 @@ nav a[href="module-3.html"]:hover {
 
 .menu span {
     width: 100%;
-    height: 4px;
+    height: 5%;
     border-radius: 2px;
     background-color: var(--dark);
 }
@@ -82,21 +82,21 @@ nav a[href="module-3.html"]:hover {
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 50px;
-    padding: 50px 100px;
+    gap: 2%;
+    padding: 2% 5%;
     
 }
 
 .duo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 30px;
+    gap: 1%;
+    padding: 1%;
     align-items: center;
 }
 
 [class*="span-"] {
-    padding: 40px;
+    padding: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
