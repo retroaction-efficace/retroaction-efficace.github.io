@@ -180,16 +180,19 @@ input[type="range"]:hover {
 .low {
     background-color: var(--low);
     padding: 5px;
+    text-align: center;
 }
 
 .moderate {
     background-color: var(--moderate);
     padding: 5px;
+    text-align: center;
 }
 
 .high {
     background-color: var(--high);
     padding: 5px;
+    text-align: center;
 }
 
 /* General Styles */
