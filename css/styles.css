@@ -348,6 +348,10 @@ td {
     cursor: default;
 }
 
+no-padding {
+    padding: 0;
+}
+
 /* Additional Colors */
 
 .module-1 {
