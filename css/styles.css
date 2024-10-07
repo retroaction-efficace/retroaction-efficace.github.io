@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    font-size: 16px;
 }
 
 header {
@@ -142,6 +143,7 @@ main {
 
 label {
     white-space: nowrap;
+    font-size: 1rem;
 }
 
 input[type="range"] {
@@ -201,14 +203,13 @@ p {
     color: var(--dark);
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
 }
 
 h1, h2, h3 {
     color: var(--dark);
     font-family: Verdana, sans-serif;
     font-weight: normal;
-    letter-spacing: 0.5px;
     margin: 1em 0;
 }
 
@@ -218,12 +219,36 @@ h4, h5, h6 {
     font-weight: bold;
     margin: 1em 0;
 }
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.6rem;
+}
     
 a {
     color: var(--dark);
     font-family: Arial, sans-serif;
     text-decoration: none;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
 }
 
 button {
@@ -233,7 +258,7 @@ button {
     border: none;
     border-radius: 30px;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     padding: 20px;
     margin: 30px;
