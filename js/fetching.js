@@ -1,4 +1,3 @@
-// header.js
 document.addEventListener('DOMContentLoaded', function() {
     fetch('components/header.html')
         .then(response => response.text())
