@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const responses = [
         "Fournir des pistes d'amélioration",
         "Récompenser",
-        "Fournir la bonne réponse",
+        "Fournir les bonnes réponses",
         "Punir",
         "Identifier les erreurs",
-        "Attribuer une note chiffrée",
-        "Remplir une grille critériée",
         "Complimenter l'apprenant"
     ];
 
