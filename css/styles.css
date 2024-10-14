@@ -10,7 +10,7 @@ body {
 
 .landing {
     height: 50%;
-    width: 50%;
+    width: 70%;
     align-content: center;
     justify-items: center;
     margin: auto;
@@ -18,7 +18,7 @@ body {
 
 .separator {
   margin: 0 10px;
-  border-left: 1px var(--dark);
+  border-left: 1px solid var(--dark);
   height: 100%;
 }
 
@@ -363,6 +363,10 @@ td {
 
 .no-padding {
     padding: 0;
+}
+
+.no-wrap {
+    white-space: nowrap;
 }
 
 /* Additional Colors */
