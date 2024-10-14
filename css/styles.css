@@ -198,12 +198,12 @@ p {
     color: var(--dark);
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 label {
     white-space: nowrap;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h1, h2, h3, h4 {
@@ -235,7 +235,7 @@ a {
     color: var(--dark);
     font-family: Arial, sans-serif;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 button {
@@ -245,7 +245,7 @@ button {
     border: none;
     border-radius: 30px;
     font-family: Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     padding: 20px;
     margin: 30px;
@@ -317,6 +317,7 @@ td {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .interactive {
