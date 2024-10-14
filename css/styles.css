@@ -197,12 +197,16 @@ input[type="range"]:hover {
   width: 80%;
   margin: auto;
   overflow: hidden;
+}
+
+.inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 300%;
 }
 
 .slide {
-  min-width: 100%;
+  flex: 1 0 100%;
   box-sizing: border-box;
 }
 
