@@ -1,5 +1,4 @@
-<script>
-  const inner = document.querySelector('.inner'); // Updated selector
+const inner = document.querySelector('.inner');
   const dots = document.querySelectorAll('.dot');
   let index = 0;
 
@@ -21,5 +20,4 @@
     updateDots();
   });
 
-  updateDots(); // Initialize dots
-</script>
+  updateDots();
