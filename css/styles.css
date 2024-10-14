@@ -16,6 +16,12 @@ body {
     margin: auto;
 }
 
+.separator {
+  margin: 0 10px;
+  border-left: 1px var(--dark);
+  height: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
