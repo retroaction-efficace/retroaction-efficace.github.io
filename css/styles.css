@@ -8,6 +8,12 @@ body {
     font-size: 16px;
 }
 
+.landing {
+    height: 100vh;
+    width: 100vh;
+    padding: 25%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
