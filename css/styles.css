@@ -106,6 +106,10 @@ main {
     grid-column: span 12;
 }
 
+.span-9 {
+    grid-column: span 9;
+}
+
 .span-6 {
     grid-column: span 6;
 }
