@@ -1,4 +1,5 @@
-const carousel = document.querySelector('.carousel');
+<script>
+  const inner = document.querySelector('.inner'); // Updated selector
   const dots = document.querySelectorAll('.dot');
   let index = 0;
 
@@ -10,11 +11,15 @@ const carousel = document.querySelector('.carousel');
 
   document.querySelector('.right').addEventListener('click', () => {
     index = (index + 1) % 3; // Number of slides
-    carousel.style.transform = `translateX(-${index * 100}%)`;
+    inner.style.transform = `translateX(-${index * 100}%)`;
     updateDots();
   });
 
   document.querySelector('.left').addEventListener('click', () => {
     index = (index - 1 + 3) % 3; // Number of slides
-    carousel.style.transform = `translateX(-${index * 100}%)`;
+    inner.style.transform = `translateX(-${index * 100}%)`;
     updateDots();
+  });
+
+  updateDots(); // Initialize dots
+</script>
