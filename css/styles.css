@@ -8,20 +8,6 @@ body {
     font-size: 16px;
 }
 
-.landing {
-    height: 50%;
-    width: 70%;
-    align-content: center;
-    justify-items: center;
-    margin: auto;
-}
-
-.separator {
-  margin: 0 10px;
-  border-left: 1px solid var(--dark);
-  height: 100%;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -97,8 +83,7 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 30px;
-    padding: 2% 5%;
-    
+    padding: 2% 5%;  
 }
 
 .duo {
@@ -219,12 +204,7 @@ p {
     font-size: 1rem;
 }
 
-p.small {
-    font-size: 0.8rem;
-}
-
 label {
-    white-space: nowrap;
     font-size: 1rem;
 }
 
@@ -271,17 +251,6 @@ button {
     letter-spacing: 0.5px;
     padding: 20px;
     margin: 30px;
-    cursor: pointer;
-}
-
-.transition {
-    background-color: var(--light);
-    color: var(--dark);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    border: none;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
     cursor: pointer;
 }
 
