@@ -205,7 +205,10 @@ p {
 }
 
 label {
+    color: var(--dark);
+    font-family: Verdana, sans-serif;
     font-size: 1rem;
+    white-space: no-wrap;
 }
 
 h1, h2, h3, h4 {
