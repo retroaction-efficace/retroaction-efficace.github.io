@@ -138,6 +138,11 @@ main {
     display: none;
 }
 
+.left, .right, .indicator {
+    font-size: 20px;
+    padding: 10px;
+}
+
 .draggable p {
     border: 1px solid var(--dark);
     padding: 20px;
