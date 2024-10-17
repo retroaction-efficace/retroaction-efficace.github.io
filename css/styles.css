@@ -139,12 +139,12 @@ main {
 }
 
 .left, .right {
-    font-size: 20px;
+    font-size: 2em;
     padding: 10px;
 }
 
  .indicator {
-     font-size: 30px;
+     font-size: 3em;
      padding: 10px;
  }
 
