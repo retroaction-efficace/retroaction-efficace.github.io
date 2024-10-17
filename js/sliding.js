@@ -1,4 +1,5 @@
 let slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -15,5 +16,5 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
 }
 
-document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
-document.querySelector('.next').addEventListener('click', () => plusSlides(1));
+document.querySelector('.left').addEventListener('click', () => plusSlides(-1));
+document.querySelector('.right').addEventListener('click', () => plusSlides(1));
