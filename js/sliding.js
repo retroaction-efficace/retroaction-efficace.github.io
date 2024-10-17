@@ -11,8 +11,10 @@ function showSlides(n) {
     if (n < 1) {slideIndex = slides.length}
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "grid";
 }
 
 document.querySelector('.left').addEventListener('click', () => plusSlides(-1));
