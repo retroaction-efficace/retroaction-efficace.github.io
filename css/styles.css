@@ -134,6 +134,10 @@ main {
 
 /* Interactivity Tools */
 
+.slide {
+    display: none;
+}
+
 .draggable p {
     border: 1px solid var(--dark);
     padding: 20px;
