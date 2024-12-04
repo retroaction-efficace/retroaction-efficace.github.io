@@ -1,0 +1,13 @@
+:root {
+    --main: #f5f7f8; /* Light Grey */
+    --light: #ffffff; /* White */
+    --grey: #555; /* Dark Grey */
+    --dark: #0f111d; /* Black */
+    --module-1: #b8bbd0; /* Soft Blue */
+    --module-2: #d5e5de; /* Soft Green */
+    --module-3: #fbeed9; /* Soft Yellow */
+    --none: #de967e; /* Red */
+    --low: #f4d5a3; /* Yellow */
+    --moderate: #b0e0a2; /* Light Green */
+    --high: #6f8f75; /* Dark Green */
+}

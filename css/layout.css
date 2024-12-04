@@ -1,0 +1,67 @@
+#header, #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+    position: relative;
+}
+
+#nav {
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    height: 100%;
+    width: 0;
+    top: 0; 
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+    transition: width 0.5s;
+    padding: 10% 0;
+}
+
+#nav a {
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#nav a:hover {
+    background-color: var(--main);
+}
+
+#nav a[href="module-1.html"]:hover {
+    background-color: var(--module-1);
+}
+
+#nav a[href="module-2.html"]:hover {
+    background-color: var(--module-2);
+}
+
+#nav a[href="module-3.html"]:hover {
+    background-color: var(--module-3);
+}
+
+#nav.shifted {
+    width: 250px;
+}
+
+body.shifted {
+    margin-right: 250px;
+}
+
+#menu {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu span {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--dark);
+}

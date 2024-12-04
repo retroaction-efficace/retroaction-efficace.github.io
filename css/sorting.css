@@ -1,0 +1,10 @@
+#draggable p {
+    border: 1px solid var(--dark);
+    padding: 20px;
+    margin: 30px;
+}
+
+.dropzone {
+    height: 100px;
+    padding: 10px;
+}

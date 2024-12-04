@@ -1,0 +1,43 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    padding: 2% 5%;
+}
+
+[class*="span-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-12 {
+    grid-column: span 12;
+}
+
+.span-9 {
+    grid-column: span 9;
+}
+
+.span-6 {
+    grid-column: span 6;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+.span-1 {
+    grid-column: span 1;
+}
+
+.box {
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding: 40px;
+}

@@ -1,0 +1,1 @@
+export function coloring(){document.querySelectorAll("p").forEach((e=>{e.innerHTML=e.innerHTML.replace(/●\s*(-?\d+\.\d{2})/g,((e,n)=>`<span class="${n<=0?"none":n<=.19?"low":n<=.79?"moderate":"high"}">●</span> ${n}`))}))}

@@ -1,0 +1,37 @@
+#left, #right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#left {
+    border-right: 30px solid var(--dark);
+}
+
+#right {
+    border-left: 30px solid var(--dark);
+}
+
+#indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#indicators .circle {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#indicators .circle.active {
+    background-color: var(--dark);
+}

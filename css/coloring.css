@@ -1,0 +1,15 @@
+.none {
+    color: var(--none);
+}
+
+.low {
+    color: var(--low);
+}
+
+.moderate {
+    color: var(--moderate);
+}
+
+.high {
+    color: var(--high);
+}

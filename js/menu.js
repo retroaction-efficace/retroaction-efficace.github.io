@@ -1,0 +1,1 @@
+export function menu(){const e=document.querySelector("#nav"),t=document.querySelector("body");document.querySelector("#menu").addEventListener("click",(()=>{const s=e.classList.toggle("shifted");t.classList.toggle("shifted",s)})),e.addEventListener("mouseleave",(()=>{e.classList.remove("shifted"),t.classList.remove("shifted")}))}

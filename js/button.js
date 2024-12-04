@@ -1,0 +1,1 @@
+import{visibility}from"./main.js";export function navigating(i){window.location.href=i}export function displaying(i){const n=i.nextElementSibling;visibility(n,!0),i.classList.add("hidden")}

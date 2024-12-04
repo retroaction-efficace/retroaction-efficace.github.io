@@ -1,0 +1,1 @@
+import{visibility}from"./main.js";export function selecting(){const o=window.location.pathname.split("/").pop(),e=document.querySelectorAll(".color"),l=document.querySelectorAll(".dark");e.forEach((e=>{e.classList.toggle("hidden",o.includes("module"))})),l.forEach((e=>{e.classList.toggle("hidden",!o.includes("module"))}))}

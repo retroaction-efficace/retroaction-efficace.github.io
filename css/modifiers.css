@@ -1,0 +1,51 @@
+.interactive {
+    transition: transform 0.3s ease-in-out;
+}
+
+.interactive:hover {
+    transform: scale(1.1);
+}
+
+.grab {
+    cursor: grab;
+}
+
+.grab:active {
+    cursor: grabbing;
+}
+
+.no-grab {
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    color: var(--high);
+}
+
+.wrong {
+    color: var(--none);
+}
+
+.module-1 {
+    background-color: var(--module-1);
+}
+
+.module-2 {
+    background-color: var(--module-2);
+}
+
+.module-3 {
+    background-color: var(--module-3);
+}
